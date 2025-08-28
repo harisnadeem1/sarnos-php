@@ -26,6 +26,7 @@ $cartHasItems = isset($cartItems) && count($cartItems) > 0;
 // Handle translations for cart items
 $lang = $_SESSION['lang'] ?? 'nl';
 
+
 if (!empty($cartItems)) {
     foreach ($cartItems as &$item) {
         $translation = $item['translations'][$lang] ?? null;
@@ -49,6 +50,10 @@ $paramsFr['lang'] = 'fr';
 $linkNl = $_SERVER['PHP_SELF'] . '?' . http_build_query($paramsNl);
 $linkFr = $_SERVER['PHP_SELF'] . '?' . http_build_query($paramsFr);
 ?>
+
+<script>
+    const activeLang = "<?php echo $lang; ?>";
+</script>
 <style>
     .announcement-bar {
         background: #ff0000;
@@ -1901,160 +1906,162 @@ $linkFr = $_SERVER['PHP_SELF'] . '?' . http_build_query($paramsFr);
 
     // Recent Sales Notification System - REAL PRODUCTS
     function showSalesNotification() {
-        console.log('REAL: Pokazuję powiadomienie o sprzedaży...'); // Debug log
+    console.log('REAL: Showing sales notification...');
 
-        const container = document.getElementById('recentSalesContainer');
-
-        if (!container) {
-            console.log('REAL: Kontener nie znaleziony!'); // Debug log
-            return;
-        }
-
-        // Użyj prawdziwych produktów z bazy danych
-        const realProducts = <?php echo json_encode($productsForNotifications); ?>;
-
-        if (!realProducts || realProducts.length === 0) {
-            console.log('REAL: Brak produktów w bazie danych, używam testowych...');
-            // Fallback to test products if no real products
-            const testProducts = [
-                { name: "iPhone 15 Pro Max", price: "4.999", image_url: "" },
-                { name: "Samsung Galaxy S24", price: "3.299", image_url: "" },
-                { name: "MacBook Air M2", price: "5.499", image_url: "" },
-                { name: "AirPods Pro", price: "899", image_url: "" },
-                { name: "iPad Air", price: "2.199", image_url: "" }
-            ];
-            var productsToUse = testProducts;
-        } else {
-            console.log('REAL: Znaleziono', realProducts.length, 'produktów w bazie danych');
-            var productsToUse = realProducts;
-        }
-
-        const randomProduct = productsToUse[Math.floor(Math.random() * productsToUse.length)];
-        const timeOptions = [
-            "2 min", "5 min", "8 min", "12 min",
-            "15 min", "18 min", "22 min", "25 min"
-        ];
-        const randomTime = timeOptions[Math.floor(Math.random() * timeOptions.length)];
-
-        const notification = document.createElement('div');
-        notification.innerHTML = `
-            <div style="
-                background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
-                border-radius: 8px;
-                padding: 10px 12px;
-                margin-bottom: 8px;
-                box-shadow: 0 4px 15px rgba(220, 53, 69, 0.3);
-                border: 2px solid #ffffff;
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                max-width: 250px;
-                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-                animation: slideIn 0.4s ease-out;
-                z-index: 10000;
-                position: relative;
-                overflow: hidden;
-            ">
-                <div style="
-                    width: 36px;
-                    height: 36px;
-                    border-radius: 6px;
-                    background: rgba(255, 255, 255, 0.9);
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    overflow: hidden;
-                    flex-shrink: 0;
-                    border: 2px solid #ffffff;
-                    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-                ">
-                    ${randomProduct.image_url ?
-                `<img src="${randomProduct.image_url}" alt="${randomProduct.name}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 4px;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">` :
-                ''
-            }
-                    <div style="
-                        display: ${randomProduct.image_url ? 'none' : 'flex'};
-                        align-items: center;
-                        justify-content: center;
-                        font-size: 18px;
-                        width: 100%;
-                        height: 100%;
-                        color: #dc3545;
-                    ">
-                        🔥
-                    </div>
-                </div>
-                <div style="flex: 1; min-width: 0;">
-                    <div style="
-                        font-size: 10px;
-                        color: #ffffff;
-                        font-weight: 700;
-                        margin-bottom: 3px;
-                        text-transform: uppercase;
-                        letter-spacing: 0.8px;
-                        text-shadow: 0 1px 2px rgba(0,0,0,0.2);
-                    ">
-                        ✅ SPRZEDANO ${randomTime} TEMU
-                    </div>
-                    <div style="
-                        font-size: 12px;
-                        font-weight: 700;
-                        color: #ffffff;
-                        margin-bottom: 2px;
-                        line-height: 1.3;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        white-space: nowrap;
-                        text-shadow: 0 1px 2px rgba(0,0,0,0.2);
-                    ">
-                        ${randomProduct.name}
-                    </div>
-                    <div style="
-                        font-size: 11px;
-                        color: #ffffff;
-                        font-weight: 600;
-                        background: rgba(255, 255, 255, 0.2);
-                        padding: 2px 6px;
-                        border-radius: 4px;
-                        display: inline-block;
-                        backdrop-filter: blur(5px);
-                    ">
-                        ${randomProduct.price} zł
-                    </div>
-                </div>
-                <button onclick="this.parentElement.remove()" style="
-                    background: rgba(255, 255, 255, 0.2);
-                    border: 1px solid rgba(255, 255, 255, 0.3);
-                    color: #ffffff;
-                    cursor: pointer;
-                    font-size: 14px;
-                    padding: 2px;
-                    border-radius: 4px;
-                    width: 20px;
-                    height: 20px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    transition: all 0.2s ease;
-                    font-weight: bold;
-                    backdrop-filter: blur(5px);
-                " onmouseover="this.style.background='rgba(255, 255, 255, 0.3)'" onmouseout="this.style.background='rgba(255, 255, 255, 0.2)'">
-                    ×
-                </button>
-            </div>
-        `;
-
-        container.appendChild(notification);
-        console.log('REAL: Powiadomienie dodane dla produktu:', randomProduct.name); // Debug log
-
-        // Remove after 8 seconds
-        setTimeout(() => {
-            if (notification.parentElement) {
-                notification.remove();
-            }
-        }, 8000);
+    const container = document.getElementById('recentSalesContainer');
+    if (!container) {
+        console.log('REAL: Container not found!');
+        return;
     }
 
+    // Real products from PHP
+    const realProducts = <?php echo json_encode($productsForNotifications); ?>;
+    let productsToUse;
+
+    if (!realProducts || realProducts.length === 0) {
+        console.log('REAL: No products in DB, using fallback test products...');
+        productsToUse = [
+            { translations: { nl: { name: "iPhone 15 Pro Max" }, fr: { name: "iPhone 15 Pro Max" } }, price: "4.999", image_url: "" },
+            { translations: { nl: { name: "Samsung Galaxy S24" }, fr: { name: "Samsung Galaxy S24" } }, price: "3.299", image_url: "" },
+            { translations: { nl: { name: "MacBook Air M2" }, fr: { name: "MacBook Air M2" } }, price: "5.499", image_url: "" },
+            { translations: { nl: { name: "AirPods Pro" }, fr: { name: "AirPods Pro" } }, price: "899", image_url: "" },
+            { translations: { nl: { name: "iPad Air" }, fr: { name: "iPad Air" } }, price: "2.199", image_url: "" }
+        ];
+    } else {
+        console.log('REAL: Found', realProducts.length, 'products in DB');
+        productsToUse = realProducts;
+    }
+
+    const randomProduct = productsToUse[Math.floor(Math.random() * productsToUse.length)];
+    const timeOptions = ["2 min", "5 min", "8 min", "12 min", "15 min", "18 min", "22 min", "25 min"];
+    const randomTime = timeOptions[Math.floor(Math.random() * timeOptions.length)];
+
+    // Use current language
+    let productName = "";
+    if (randomProduct.translations && randomProduct.translations[activeLang]) {
+        productName = randomProduct.translations[activeLang].name || "";
+    } else {
+        productName = randomProduct.name || "Unknown Product";
+    }
+
+    const notification = document.createElement('div');
+    notification.innerHTML = `
+        <div style="
+            background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+            border-radius: 8px;
+            padding: 10px 12px;
+            margin-bottom: 8px;
+            box-shadow: 0 4px 15px rgba(220, 53, 69, 0.3);
+            border: 2px solid #ffffff;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            max-width: 250px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            animation: slideIn 0.4s ease-out;
+            z-index: 10000;
+            position: relative;
+            overflow: hidden;
+        ">
+            <div style="
+                width: 36px;
+                height: 36px;
+                border-radius: 6px;
+                background: rgba(255, 255, 255, 0.9);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+                flex-shrink: 0;
+                border: 2px solid #ffffff;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            ">
+                ${randomProduct.image_url ?
+                    `<img src="${randomProduct.image_url}" alt="${productName}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 4px;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">` :
+                    ''
+                }
+                <div style="
+                    display: ${randomProduct.image_url ? 'none' : 'flex'};
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 18px;
+                    width: 100%;
+                    height: 100%;
+                    color: #dc3545;
+                ">
+                    🔥
+                </div>
+            </div>
+            <div style="flex: 1; min-width: 0;">
+                <div style="
+                    font-size: 10px;
+                    color: #ffffff;
+                    font-weight: 700;
+                    margin-bottom: 3px;
+                    text-transform: uppercase;
+                    letter-spacing: 0.8px;
+                    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+                ">
+                    ✅ ${activeLang === "nl" ? "VERKOCHT" : "VENDU"} ${randomTime} ${activeLang === "nl" ? "GELEDEN" : "IL Y A"}
+                </div>
+                <div style="
+                    font-size: 12px;
+                    font-weight: 700;
+                    color: #ffffff;
+                    margin-bottom: 2px;
+                    line-height: 1.3;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+                ">
+                    ${productName}
+                </div>
+                <div style="
+                    font-size: 11px;
+                    color: #ffffff;
+                    font-weight: 600;
+                    background: rgba(255, 255, 255, 0.2);
+                    padding: 2px 6px;
+                    border-radius: 4px;
+                    display: inline-block;
+                    backdrop-filter: blur(5px);
+                ">
+                    ${randomProduct.price} €
+                </div>
+            </div>
+            <button onclick="this.parentElement.remove()" style="
+                background: rgba(255, 255, 255, 0.2);
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                color: #ffffff;
+                cursor: pointer;
+                font-size: 14px;
+                padding: 2px;
+                border-radius: 4px;
+                width: 20px;
+                height: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.2s ease;
+                font-weight: bold;
+                backdrop-filter: blur(5px);
+            " onmouseover="this.style.background='rgba(255, 255, 255, 0.3)'" onmouseout="this.style.background='rgba(255, 255, 255, 0.2)'">
+                ×
+            </button>
+        </div>
+    `;
+
+    container.appendChild(notification);
+    console.log('REAL: Notification added for product:', productName);
+
+    // Remove after 8 seconds
+    setTimeout(() => {
+        if (notification.parentElement) {
+            notification.remove();
+        }
+    }, 8000);
+}
     // Start notifications - REAL PRODUCTS
     document.addEventListener('DOMContentLoaded', function () {
         console.log('REAL: DOM załadowany, rozpoczynam powiadomienia...'); // Debug log
