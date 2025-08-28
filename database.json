@@ -1,0 +1,13 @@
+{
+    "shop_name": "polsky-sklep",
+    "shop_description": "Najlepsze produkty w najlepszych cenach",
+    "shopify_shop_url": "polsky-sklep.myshopify.com",
+    "categories": [
+        "Laptopy",
+        "Smartfony", 
+        "Słuchawki",
+        "Akcesoria",
+        "Gaming",
+        "Artykuły ogrodowe"
+    ]
+} 

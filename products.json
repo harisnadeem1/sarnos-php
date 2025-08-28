@@ -1,0 +1,196 @@
+[
+    {
+        "id": 231,
+        "slug": "stihl-ms-261-cm-pilarka-spalinowa",
+        "translations": {
+            "nl": {
+                "name": "STIHL MS 261 CM Benzinekettingzaag",
+                "description": "<p>Professionele kettingzaag ...<\/p>",
+                "variants": []
+            },
+            "fr": {
+                "name": "STIHL MS 261 CM Tronçonneuse thermique",
+                "description": "<p>La tronçonneuse ...<\/p>",
+                "variants": []
+            }
+        },
+        "price": 99,
+        "old_price": 200,
+        "image_url": "https:\/\/i.ibb.co\/s962HCyP\/1.webp",
+        "images": [
+            "https:\/\/i.ibb.co\/s962HCyP\/1.webp",
+            "https:\/\/i.ibb.co\/zV20LCtn\/2.webp"
+        ],
+        "shopify_variant_id": "51262779916618",
+        "category": "Zestaw narzędzi",
+        "stock_quantity": 3,
+        "is_active": true,
+        "created_at": "2025-08-10 12:50:26",
+        "updated_at": "2025-08-10 12:39:56"
+    },
+    {
+        "id": 120,
+        "slug": "naroznik-z-funkcja-spania-lambi-lewy-l-ksztaltny-z-pojemnikiem-na-posciel-kremowy-boucle",
+        "translations": {
+            "nl": {
+                "name": "Hoekbank met slaapfunctie Lambi links",
+                "description": "<p>Deze elegante L-vormige hoekbank ...<\/p>",
+                "variants": [
+                    {
+                        "name": "links",
+                        "image": "https:\/\/i.ibb.co\/0Vd9BrKB\/Aranzacja-1536x987.webp"
+                    },
+                    {
+                        "name": "rechts",
+                        "image": "https:\/\/i.ibb.co\/G4FQQmQ1\/Aranzacja-Copy-1600x1029.webp"
+                    }
+                ]
+            },
+            "fr": {
+                "name": "Canapé d’angle avec fonction lit Lambi gauche",
+                "description": "<p>Ce canapé d’angle élégant ...<\/p>",
+                "variants": [
+                    {
+                        "name": "gauche",
+                        "image": "https:\/\/i.ibb.co\/0Vd9BrKB\/Aranzacja-1536x987.webp"
+                    },
+                    {
+                        "name": "droite",
+                        "image": "https:\/\/i.ibb.co\/G4FQQmQ1\/Aranzacja-Copy-1600x1029.webp"
+                    }
+                ]
+            }
+        },
+        "price": 249,
+        "old_price": 530,
+        "image_url": "https:\/\/i.ibb.co\/0Vd9BrKB\/Aranzacja-1536x987.webp",
+        "images": [
+            "https:\/\/i.ibb.co\/0Vd9BrKB\/Aranzacja-1536x987.webp",
+            "https:\/\/i.ibb.co\/G4FQQmQ1\/Aranzacja-Copy-1600x1029.webp"
+        ],
+        "shopify_variant_id": "55214218379612",
+        "category": "Zestaw narzędzi",
+        "stock_quantity": 4,
+        "is_active": true,
+        "created_at": "2025-08-10 13:50:26",
+        "updated_at": "2025-08-10 14:39:56"
+    },
+    {
+        "id": 232,
+        "slug": "test-dutch",
+        "translations": {
+            "nl": {
+                "name": "Test Dutch",
+                "description": "<p>Dutch Desc<\/p>",
+                "variants": [
+                    {
+                        "name": "Variant Dutch",
+                        "image": "https:\/\/i.ibb.co\/sdzMGM9F\/kyoto-678619.webp"
+                    }
+                ]
+            },
+            "fr": {
+                "name": "Test French",
+                "description": "<p>French Desc<\/p>",
+                "variants": [
+                    {
+                        "name": "Variant French",
+                        "image": "https:\/\/i.ibb.co\/sdzMGM9F\/kyoto-678619.webp"
+                    }
+                ]
+            }
+        },
+        "price": 45,
+        "old_price": 344,
+        "image_url": "https:\/\/i.ibb.co\/G43xWRzV\/PBCLUB120-MIC-1605x1605.png",
+        "images": [
+            "https:\/\/i.ibb.co\/G43xWRzV\/PBCLUB120-MIC-1605x1605.png",
+            "https:\/\/i.ibb.co\/G43xWRzV\/PBCLUB120-MIC-1605x1605.png"
+        ],
+        "shopify_variant_id": "",
+        "category": "meble",
+        "stock_quantity": 5,
+        "is_active": true,
+        "created_at": "2025-08-28 02:30:19",
+        "updated_at": "2025-08-28 02:30:19"
+    },
+    {
+        "id": 233,
+        "slug": "test2-dutch",
+        "translations": {
+            "nl": {
+                "name": "Test2  Dutch",
+                "description": "<p>test dutch<\/p>",
+                "variants": [
+                    {
+                        "name": "Variant Dutch",
+                        "image": "https:\/\/i.ibb.co\/G43xWRzV\/PBCLUB120-MIC-1605x1605.png"
+                    }
+                ]
+            },
+            "fr": {
+                "name": "Test 2 French",
+                "description": "<p>test frencg<\/p>",
+                "variants": [
+                    {
+                        "name": "Variant French",
+                        "image": "https:\/\/i.ibb.co\/G43xWRzV\/PBCLUB120-MIC-1605x1605.png"
+                    }
+                ]
+            }
+        },
+        "price": 45,
+        "old_price": 323,
+        "image_url": "https:\/\/i.ibb.co\/G43xWRzV\/PBCLUB120-MIC-1605x1605.png",
+        "images": [
+            "https:\/\/i.ibb.co\/G43xWRzV\/PBCLUB120-MIC-1605x1605.png",
+            "https:\/\/i.ibb.co\/G43xWRzV\/PBCLUB120-MIC-1605x1605.png"
+        ],
+        "shopify_variant_id": "",
+        "category": "Głośniki Imprezowe",
+        "stock_quantity": 4,
+        "is_active": true,
+        "created_at": "2025-08-28 03:06:43",
+        "updated_at": "2025-08-28 03:06:43"
+    },
+    {
+        "id": 234,
+        "slug": "test-3-dutch",
+        "translations": {
+            "nl": {
+                "name": "Test 3 Dutch",
+                "description": "<p>test<\/p>",
+                "variants": [
+                    {
+                        "name": "Variant Dutch",
+                        "image": "https:\/\/i.ibb.co\/G43xWRzV\/PBCLUB120-MIC-1605x1605.png"
+                    }
+                ]
+            },
+            "fr": {
+                "name": "Test 3 French",
+                "description": "<p>test<\/p>",
+                "variants": [
+                    {
+                        "name": "Variant French",
+                        "image": "https:\/\/i.ibb.co\/G43xWRzV\/PBCLUB120-MIC-1605x1605.png"
+                    }
+                ]
+            }
+        },
+        "price": 3435,
+        "old_price": 43434,
+        "image_url": "https:\/\/i.ibb.co\/G43xWRzV\/PBCLUB120-MIC-1605x1605.png",
+        "images": [
+            "https:\/\/i.ibb.co\/G43xWRzV\/PBCLUB120-MIC-1605x1605.png",
+            "https:\/\/i.ibb.co\/G43xWRzV\/PBCLUB120-MIC-1605x1605.png",
+            "https:\/\/i.ibb.co\/G43xWRzV\/PBCLUB120-MIC-1605x1605.png"
+        ],
+        "shopify_variant_id": "",
+        "category": "meble",
+        "stock_quantity": 5,
+        "is_active": true,
+        "created_at": "2025-08-28 03:08:16",
+        "updated_at": "2025-08-28 03:08:16"
+    }
+]

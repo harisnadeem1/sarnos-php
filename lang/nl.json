@@ -1,0 +1,486 @@
+{
+    "header": {
+        "announcement": {
+            "text": "🔥 MEGA PROMOTIES! Kortingen tot 50%"
+        },
+        "nav": {
+            "home": "Startpagina",
+            "categories": "Categorieën",
+            "all_products": "Alle Producten",
+            "about": "Over Ons",
+            "contact": "Contact",
+            "search_placeholder": "Zoek producten..."
+        },
+        "trustpilot": {
+            "slides": [
+                {
+                    "text": "Geweldig"
+                },
+                {
+                    "text": "Gratis levering!"
+                },
+                {
+                    "text": "Levering in heel Nederland"
+                }
+            ]
+        }
+    },
+    "home": {
+        "hero": {
+            "title": "Beste Aanbiedingen & Mega Uitverkopen!",
+            "subtitle": "Ontdek onze spectaculaire kortingen tot wel 70%! Altijd de beste deals, altijd de laagste prijzen. Mis deze mega-uitverkopen niet!",
+            "button_primary": "Nu Kopen met Korting",
+            "button_secondary": "Klantenservice"
+        },
+        "collections": {
+            "title": "Onze Collecties",
+            "subtitle": "Ontdek onze zorgvuldig geselecteerde collecties producten in {count} categorieën",
+            "view_collection": "Bekijk Collectie",
+            "product_single": "product",
+            "product_few": "producten",
+            "product_many": "producten",
+            "default_description": "Ontdek de beste producten in deze categorie",
+            "cta": "Bekijk Producten",
+            "custom_descriptions": {
+                "meble wypoczynkowe": "Comfortabele en stijlvolle meubels om thuis te ontspannen",
+                "zabawki na zewnątrz": "Veilig speelgoed voor actief buitenspelen",
+                "pufy sako": "Moderne zitzakken in verschillende kleuren en maten",
+                "meble": "Hoogwaardige meubels voor elke kamer"
+            }
+        },
+        "products": {
+            "title": "Onze Producten",
+            "subtitle_with_count": "Bekijk onze collectie van {count} prachtige producten",
+            "subtitle_empty": "Binnenkort nieuwe producten!",
+            "empty_title": "Geen producten beschikbaar",
+            "empty_message": "Ga naar het <a href='admin/dashboard.php' style='color: #dc3545;'>Beheerderspaneel</a> om producten toe te voegen.",
+            "view_product": "Bekijk product",
+            "in_stock": "Op voorraad: {count} st.",
+            "out_of_stock": "Niet op voorraad",
+            "see_all": "Bekijk alle producten ({count})"
+        },
+        "why_choose_us": {
+            "title": "Waarom Kiezen Voor Ons?",
+            "subtitle": "Ontdek waarom duizenden klanten elke dag voor onze producten kiezen",
+            "features": [
+                {
+                    "icon": "fas fa-shipping-fast",
+                    "title": "Snelle Levering",
+                    "description": "Altijd gratis levering binnen 24 uur! Geen minimum bestelbedrag. Express levering beschikbaar in heel Nederland."
+                },
+                {
+                    "icon": "fas fa-award",
+                    "title": "Hoogste Kwaliteit",
+                    "description": "Alleen originele producten van betrouwbare leveranciers. 100% kwaliteitsgarantie op alle producten."
+                },
+                {
+                    "icon": "fas fa-headset",
+                    "title": "24/7 Ondersteuning",
+                    "description": "Ons team van experts is 24/7 beschikbaar om je met elke vraag te helpen."
+                },
+                {
+                    "icon": "fas fa-undo-alt",
+                    "title": "30 Dagen Retour",
+                    "description": "Niet tevreden met je aankoop? Retourneer het product binnen 30 dagen zonder vragen."
+                }
+            ]
+        },
+        "testimonials": {
+            "title": "Wat Onze Klanten Zeggen",
+            "subtitle": "Lees de beoordelingen van tevreden klanten",
+            "items": [
+                {
+                    "stars": 5,
+                    "text": "Fantastische prijzen en supersnelle levering! Aanbevolen voor iedereen, producten van topkwaliteit.",
+                    "author": "Anna Kowalska",
+                    "location": "Warschau"
+                },
+                {
+                    "stars": 5,
+                    "text": "Klantenservice van het hoogste niveau. Problemen direct opgelost. Zeer professioneel!",
+                    "author": "Piotr Nowak",
+                    "location": "Krakau"
+                },
+                {
+                    "stars": 5,
+                    "text": "Altijd de beste promoties! Ik heb al honderden euro's bespaard bij het winkelen. Mega-uitverkopen!",
+                    "author": "Magdalena Wiśniewska",
+                    "location": "Gdańsk"
+                }
+            ]
+        }
+    },
+    "footer": {
+        "newsletter": {
+            "title": "Mis geen mega promoties!",
+            "subtitle": "Schrijf je in voor onze nieuwsbrief en blijf op de hoogte van de beste aanbiedingen",
+            "placeholder": "Uw e-mailadres",
+            "button": "Inschrijven"
+        },
+        "about": {
+            "text": "De ideale winkel met mega promoties op de markt van Sarnos. Bij ons vind je de beste deals en de laagste prijzen!"
+        },
+        "contact": {
+            "title": "Contact",
+            "email": "kontakt@Sarnos.com",
+            "address_line1": "ul. Krakowska 152",
+            "address_line2": "30-435 Kraków",
+            "address_line3": "Polen"
+        },
+        "info": {
+            "title": "Informatie",
+            "terms": "Reglement",
+            "privacy": "Privacybeleid",
+            "shipping": "Verzendinformatie",
+            "returns": "Retourneren & Klachten",
+            "contact": "Contact"
+        },
+        "company": {
+            "title": "Bedrijfsgegevens",
+            "nip": "NIP: 675-15-67-890",
+            "regon": "REGON: 385678901",
+            "krs": "KRS: 0000789456",
+            "bank": "Bank: PKO Bank Sarnos",
+            "swift": "SWIFT: PKOPPLPW",
+            "iban": "IBAN: PL44 1020 2892 2276 3005 0000 1234"
+        },
+        "bottom": {
+            "text": "© 2025 Sarnos. Alle rechten voorbehouden."
+        }
+    },
+    "about": {
+        "header": {
+            "title": "Over Ons",
+            "subtitle": "Ontdek het verhaal van Sarnos - jouw betrouwbare partner in online shoppen"
+        },
+        "section": {
+            "title": "Over ons",
+            "paragraph1": "Sarnos is een toonaangevende webwinkel die een breed assortiment producten aanbiedt tegen aantrekkelijke prijzen. Onze missie is om klanten de hoogste kwaliteit producten en een uitzonderlijke winkelervaring te bieden.",
+            "paragraph2": "We zijn al meer dan 5 jaar actief op de markt en hebben het vertrouwen van duizenden tevreden klanten gewonnen. Ons team bestaat uit ervaren specialisten die zorgen voor elk aspect van jouw aankoop."
+        },
+        "values": {
+            "passion": {
+                "title": "Passie",
+                "text": "Elke dag beginnen we met passie om de beste producten aan onze klanten te leveren."
+            },
+            "trust": {
+                "title": "Vertrouwen",
+                "text": "We bouwen langdurige relaties op gebaseerd op vertrouwen en transparantie bij elke transactie."
+            },
+            "innovation": {
+                "title": "Innovatie",
+                "text": "We introduceren voortdurend nieuwe oplossingen om jouw winkelervaring nog eenvoudiger te maken."
+            }
+        },
+        "stats": {
+            "title": "Sarnos in Cijfers",
+            "clients": "Tevreden Klanten",
+            "products": "Producten in Assortiment",
+            "reviews": "Positieve Beoordelingen",
+            "experience": "Jaren Ervaring"
+        },
+        "contact": {
+            "title": "Vragen?",
+            "text": "Ons team staat altijd klaar om je te helpen. Neem vandaag nog contact met ons op!",
+            "button": "Neem Contact met Ons Op"
+        }
+    },
+
+    "contact": {
+  "header": {
+    "title": "Contact",
+    "subtitle": "Neem contact met ons op"
+  },
+  "address": {
+    "title": "Correspondentieadres",
+    "line1": "ul. Krakowska 152",
+    "line2": "30-435 Kraków",
+    "line3": "Polen"
+  },
+  "form": {
+    "title": "Contactformulier",
+    "name": "Naam en Achternaam",
+    "email": "E-mail",
+    "subject": "Onderwerp",
+    "message": "Bericht",
+    "button": "Bericht Verzenden"
+  },
+  "hours": {
+    "title": "Openingstijden",
+    "monday_friday": "Maandag - Vrijdag: 9:00 - 17:00",
+    "saturday": "Zaterdag: 10:00 - 14:00",
+    "sunday": "Zondag: Gesloten"
+  }
+},
+
+
+"terms": {
+  "header": {
+    "title": "Algemene Voorwaarden",
+    "subtitle": "Voorwaarden voor het gebruik van onze webshop"
+  },
+  "intro": {
+    "title": "Welkom in onze webshop",
+    "text": "Door deze website te gebruiken en een bestelling te plaatsen, ga je akkoord met de volgende algemene voorwaarden:"
+  },
+  "list": [
+    "Alle prijzen zijn inclusief btw, tenzij anders vermeld.",
+    "Wij behouden ons het recht voor om prijzen, producten en voorwaarden op elk moment te wijzigen.",
+    "Bestellingen worden alleen verwerkt na een succesvolle betaling.",
+    "In geval van overmacht behouden wij ons het recht voor om de levering te vertragen of te annuleren.",
+    "Klachten moeten binnen 14 dagen na ontvangst van de bestelling worden gemeld."
+  ],
+  "contact": {
+    "title": "Contact",
+    "text": "Voor vragen over de voorwaarden kunt u contact met ons opnemen via onze <a href='kontakt.php'>contactpagina</a>."
+  }
+},
+
+
+
+"privacy": {
+  "header": {
+    "title": "Privacybeleid",
+    "subtitle": "Hoe wij met uw persoonlijke gegevens omgaan"
+  },
+  "personal_data": {
+    "title": "Bescherming van persoonsgegevens",
+    "text": "Wij hechten veel waarde aan de privacy van onze klanten en zorgen voor de veiligheid van hun persoonlijke gegevens:",
+    "list": [
+      "Uw gegevens worden uitsluitend gebruikt voor de uitvoering van bestellingen en klantenservice.",
+      "Wij delen uw gegevens niet met derden, tenzij dit nodig is voor de levering.",
+      "U heeft het recht om uw gegevens in te zien, te wijzigen of te verwijderen.",
+      "Onze website maakt gebruik van cookies om een optimale gebruikerservaring te bieden."
+    ]
+  },
+  "cookies": {
+    "title": "Cookies",
+    "text": "Wij gebruiken cookies om:",
+    "list": [
+      "Uw voorkeuren te onthouden",
+      "De website soepel te laten werken",
+      "Het verkeer op de site te analyseren",
+      "Inhoud te personaliseren"
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "text": "Voor vragen over ons privacybeleid kunt u contact met ons opnemen via onze <a href='kontakt.php'>contactpagina</a>."
+  }
+},
+
+
+"shipping": {
+  "header": {
+    "title": "Verzendinformatie",
+    "subtitle": "Details over de levering van bestellingen"
+  },
+  "delivery_time": {
+    "title": "Levertijd",
+    "text": "Wij verzenden bestellingen binnen 2-5 werkdagen na ontvangst van de betaling. Zodra uw bestelling is verzonden, ontvangt u een e-mail met een Track & Trace-code.",
+    "info": {
+      "shipping": "Verzending: InPost Pakketautomaten",
+      "days": "Leveringen: Werkdagen (maandag - vrijdag)",
+      "area": "Bezorggebied: Alleen binnen Polen"
+    }
+  },
+  "tracking": {
+    "title": "Zending volgen",
+    "text": "Na verzending ontvangt u een e-mail met:",
+    "list": [
+      "Het verzendnummer",
+      "De Track & Trace-code",
+      "Een link om de leveringsstatus te volgen"
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "text": "Voor vragen over de levering kunt u contact met ons opnemen via onze <a href='kontakt.php'>contactpagina</a>."
+  }
+}
+,
+"returns": {
+  "header": {
+    "title": "Retouren",
+    "subtitle": "Informatie over retouren en klachten"
+  },
+  "policy": {
+    "title": "Retourbeleid",
+    "text": "Niet tevreden met uw aankoop? U kunt het product binnen 30 dagen na ontvangst retourneren, op voorwaarde dat het ongebruikt is en zich in de originele staat bevindt.",
+    "address": {
+      "title": "Retouradres:",
+      "line1": "Retouren / Retouradres:",
+      "line2": "ul. Nowowiejska 12",
+      "line3": "00-665 Warschau",
+      "line4": "Polen"
+    }
+  },
+  "process": {
+    "title": "Retourproces",
+    "list": [
+      "U ontvangt uw terugbetaling binnen 5 werkdagen na ontvangst van het geretourneerde product.",
+      "De retourverzendkosten zijn voor rekening van de klant, tenzij anders overeengekomen.",
+      "Voeg een briefje met uw naam en bestelnummer toe aan het pakket voor een snelle verwerking."
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "text": "Voor vragen over retouren kunt u contact met ons opnemen via onze <a href='kontakt.php'>contactpagina</a>."
+  }
+}
+
+
+
+,
+
+
+"cart": {
+  "header": {
+    "title": "Uw winkelwagen"
+  },
+  "actions": {
+    "close": "Sluiten"
+  },
+
+  "reservation": {
+    "text": "🕒 Uw producten zijn gereserveerd voor {time}. Rond uw aankoop af voordat de reservering verloopt!"
+  },
+  "empty": "Uw winkelwagen is leeg",
+  "total": "Totaal",
+  "checkout": "Ga naar afrekenen",
+  "reviews": [
+    "\"Geweldige service, snelle levering!\"",
+    "\"Aanrader voor iedereen, topkwaliteit\"",
+    "\"Beste online winkel, altijd tevreden\"",
+    "\"Zeer snelle afhandeling van bestelling, aanbevolen!\"",
+    "\"Klantenservice van het hoogste niveau!\""
+  ],
+  "benefits": {
+    "secure": "Veilige SSL-betalingen",
+    "shipping": "Altijd gratis verzending",
+    "returns": "30 dagen retour",
+    "support": "24/7 ondersteuning"
+  }
+},
+
+"checkout": {
+  "loading": {
+    "title": "Doorverwijzen naar betaling...",
+    "subtitle": "Even geduld, we verbinden je met de beveiligde betalingspagina van Przelewy24",
+    "steps": {
+      "step1": "Bestelgegevens verifiëren",
+      "step2": "Beveiligde verbinding tot stand brengen",
+      "step3": "Doorverwijzen naar betaalpoort"
+    },
+    "security": "De verbinding is beveiligd met SSL-encryptie"
+  },
+
+  "main": {
+    "back_to_cart": "Terug naar winkelwagen",
+    "cancelled": "Betaling is geannuleerd. Probeer het opnieuw.",
+    "contact_info": "Contactgegevens",
+    "delivery_address": "Bezorgadres",
+    "fields": {
+      "email": "E-mailadres",
+      "first_name": "Voornaam",
+      "last_name": "Achternaam",
+      "company": "Bedrijfsnaam (optioneel)",
+      "address": "Adres",
+      "apartment": "Appartement, unit, etc. (optioneel)",
+      "city": "Stad",
+      "postal_code": "Postcode",
+      "phone": "Telefoonnummer (optioneel)"
+    },
+    "required": "*",
+    "shipping": {
+      "title": "Levering",
+      "free_delivery": "Gratis levering",
+      "days": "1-3 werkdagen",
+      "price": "Gratis"
+    }
+  }
+  ,
+  "summary": {
+    "subtotal": "Subtotaal",
+    "shipping": "Verzending",
+    "free": "Gratis",
+    "total": "Totaal"
+  },
+
+  "payment": {
+    "title": "Betaling",
+    "method": "Betaal met Przelewy24",
+    "button": "NU BETALEN"
+  },
+   "benefits": {
+    "secure": "Veilige SSL-betalingen",
+    "shipping": "Altijd gratis verzending",
+    "returns": "30 dagen retour"
+  }
+},
+
+"collection": {
+    "notice_title": "LIQUIDATIEVERKOOP",
+    "notice_line1": "Deze winkel staat momenteel onder curatele en zal binnenkort sluiten. Alle resterende fabrieksartikelen worden nu verkocht tijdens deze liquidatieverkoop. Nieuwe voorraad is uitgesloten — op = op.",
+    "notice_line2": "Alle aankopen zijn beschermd door de Sarnos-wetgeving — wettelijke garantie en retourtermijn blijven altijd van kracht."
+  }
+
+,
+
+
+
+"product": {
+  "rating_text": "Beoordeling {rating} | {count} beoordelingen",
+  "save_text": "Je bespaart {amount} €",
+  "campaign_info": "Prijs verlaagd vanwege uitverkoop van het product",
+  "variant_title": "Kies een variant",
+  "details_title": "Details",
+  "availability": "Beschikbaarheid",
+  "in_stock": "{count} stuks",
+  "out_of_stock": "Niet op voorraad",
+  "sku": "SKU",
+  "viewers": "{count} mensen bekijken dit product nu",
+  "add_to_cart": "In winkelwagen",
+  "sold_out": "Uitverkocht",
+  "delivery_time": "Levering al op",
+  "trust": {
+    "fast_shipping": "Levering 1-3 dagen",
+    "returns": "30 dagen retour",
+    "warranty": "4 jaar garantie",
+    "support": "24/7 ondersteuning"
+  },
+  "trustpilot": {
+    "alt": "5 sterren Trustpilot",
+    "logo_alt": "Trustpilot logo",
+    "reviews": [
+      { "text": "Fantastische kwaliteit en supersnelle levering!", "author": "- Katarzyna M." },
+      { "text": "Beste winkel! Ik bestel hier al voor de 3e keer", "author": "- Tomasz K." },
+      { "text": "Geweldige prijzen en top klantenservice", "author": "- Agnieszka W." },
+      { "text": "Aanrader voor iedereen! Top kwaliteit!", "author": "- Michał S." }
+    ]
+  },
+  "description_title": "Productbeschrijving",
+  "why_low_prices_title": "Waarom zijn onze prijzen zo laag?",
+  "why_low_prices": {
+    "bulk_title": "Wij verkopen in grote partijen",
+    "bulk_text": "Wij kopen en verkopen producten in zeer grote partijen, waardoor wij maximale kortingen krijgen en enorme besparingen kunnen doorgeven aan onze klanten.",
+    "mega_title": "Mega acties - tot 90% goedkoper",
+    "mega_text": "Wij organiseren meerdere keren per jaar mega acties met kortingen tot 90%! Zo krijgt iedereen de kans om kwaliteitsproducten te kopen.",
+    "warranty_title": "4 jaar garantie",
+    "warranty_text": "Wij bieden maar liefst 4 jaar garantie op alle producten. Dit bewijst onze hoge kwaliteit en ons vertrouwen in de duurzaamheid van onze producten."
+  },
+  "promo_banner": {
+    "title": "De grootste kortingen in heel Polen!",
+    "subtitle": "Alleen bij ons vind je de beste deals en de laagste prijzen op de markt. Tevredenheid gegarandeerd!",
+    "button": "Bekijk alle aanbiedingen"
+  },
+  "related": {
+    "title": "Misschien vind je dit ook leuk",
+    "subtitle": "Bekijk andere producten die je misschien interesseren",
+    "add_to_cart": "In winkelwagen",
+    "in_stock": "Op voorraad: {count} stuks",
+    "out_of_stock": "Niet op voorraad"
+  }
+}
+
+}

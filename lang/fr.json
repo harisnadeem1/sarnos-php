@@ -1,0 +1,529 @@
+{
+
+
+
+   "header": {
+  "announcement": {
+    "text": "🔥 MÉGA PROMOTIONS ! Réductions jusqu'à 50 %"
+  },
+
+
+    "nav": {
+    "home": "Accueil",
+    "categories": "Catégories",
+    "all_products": "Tous les Produits",
+    "about": "À Propos",
+    "contact": "Contact",
+    "search_placeholder": "Rechercher des produits..."
+  },
+
+
+   "trustpilot": {
+    "slides": [
+      { "text": "Excellent" },
+      { "text": "Livraison gratuite !" },
+      { "text": "Livraison partout en France" }
+    ]
+  }
+},
+
+
+
+  "home": {
+    "hero": {
+      "title": "Meilleures Offres & Super Soldes !",
+      "subtitle": "Découvrez nos réductions spectaculaires jusqu'à -70 % ! Toujours les meilleures affaires, toujours les prix les plus bas. Ne manquez pas ces super soldes !",
+      "button_primary": "Achetez Maintenant avec Réduction",
+      "button_secondary": "Service Client"
+    },
+
+
+
+
+     "collections": {
+    "title": "Nos Collections",
+    "subtitle": "Découvrez nos collections de produits soigneusement sélectionnées dans {count} catégories",
+    "view_collection": "Voir la Collection",
+    "product_single": "produit",
+    "product_few": "produits",
+    "product_many": "produits",
+    "default_description": "Découvrez les meilleurs produits dans cette catégorie",
+    "cta": "Voir les Produits",
+    "custom_descriptions": {
+      "meble wypoczynkowe": "Des meubles confortables et élégants pour se détendre à la maison",
+      "zabawki na zewnątrz": "Des jouets sûrs pour jouer activement en plein air",
+      "pufy sako": "Des poufs modernes disponibles en différentes couleurs et tailles",
+      "meble": "Des meubles de haute qualité pour chaque pièce"
+    }
+  },
+
+
+
+  "products": {
+    "title": "Nos Produits",
+    "subtitle_with_count": "Découvrez notre collection de {count} magnifiques produits",
+    "subtitle_empty": "De nouveaux produits bientôt disponibles !",
+    "empty_title": "Aucun produit disponible",
+    "empty_message": "Allez dans le <a href='admin/dashboard.php' style='color: #dc3545;'>panneau d'administration</a> pour ajouter des produits.",
+    "view_product": "Voir le produit",
+    "in_stock": "En stock : {count} pcs",
+    "out_of_stock": "Rupture de stock",
+    "see_all": "Voir tous les produits ({count})"
+  },
+
+
+
+  "why_choose_us": {
+    "title": "Pourquoi Nous Choisir ?",
+    "subtitle": "Découvrez pourquoi des milliers de clients choisissent nos produits chaque jour",
+    "features": [
+      {
+        "icon": "fas fa-shipping-fast",
+        "title": "Livraison Rapide",
+        "description": "Toujours une livraison gratuite sous 24h ! Aucun montant minimum de commande. Livraison express disponible partout en France."
+      },
+      {
+        "icon": "fas fa-award",
+        "title": "Qualité Supérieure",
+        "description": "Uniquement des produits originaux provenant de fournisseurs fiables. Garantie 100 % qualité sur tous les produits."
+      },
+      {
+        "icon": "fas fa-headset",
+        "title": "Assistance 24/7",
+        "description": "Notre équipe d'experts est disponible 24h/24 et 7j/7 pour vous aider avec toutes vos questions."
+      },
+      {
+        "icon": "fas fa-undo-alt",
+        "title": "Retour sous 30 Jours",
+        "description": "Pas satisfait de votre achat ? Retournez le produit sous 30 jours sans poser de questions."
+      }
+    ]
+  },
+
+
+   "testimonials": {
+    "title": "Ce Que Disent Nos Clients",
+    "subtitle": "Lisez les avis de nos clients satisfaits",
+    "items": [
+      {
+        "stars": 5,
+        "text": "Des prix fantastiques et une livraison super rapide ! Je recommande à tous, des produits de la plus haute qualité.",
+        "author": "Anna Kowalska",
+        "location": "Varsovie"
+      },
+      {
+        "stars": 5,
+        "text": "Un service client de très haut niveau. Problèmes résolus immédiatement. Très professionnel !",
+        "author": "Piotr Nowak",
+        "location": "Cracovie"
+      },
+      {
+        "stars": 5,
+        "text": "Toujours les meilleures promotions ! J’ai déjà économisé des centaines d’euros sur mes achats. Super soldes !",
+        "author": "Magdalena Wiśniewska",
+        "location": "Gdańsk"
+      }
+    ]
+  }
+
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+  
+  ,
+  "footer": {
+  "newsletter": {
+    "title": "Ne manquez pas nos méga promotions !",
+    "subtitle": "Abonnez-vous à notre newsletter et restez informé des meilleures offres",
+    "placeholder": "Votre adresse e-mail",
+    "button": "S'inscrire"
+  },
+
+   "about": {
+    "text": "La boutique idéale avec des méga promotions sur le marché Sarnos. Retrouvez chez nous les meilleures affaires et les prix les plus bas !"
+  },
+  "contact": {
+    "title": "Contact",
+    "email": "kontakt@Sarnos.com",
+    "address_line1": "ul. Krakowska 152",
+    "address_line2": "30-435 Cracovie",
+    "address_line3": "Pologne"
+  },
+  "info": {
+    "title": "Informations",
+    "terms": "Conditions générales",
+    "privacy": "Politique de confidentialité",
+    "shipping": "Informations sur la livraison",
+    "returns": "Retours & Réclamations",
+    "contact": "Contact"
+  },
+  "company": {
+    "title": "Données de l'entreprise",
+    "nip": "NIP : 675-15-67-890",
+    "regon": "REGON : 385678901",
+    "krs": "KRS : 0000789456",
+    "bank": "Banque : PKO Bank Sarnos",
+    "swift": "SWIFT : PKOPPLPW",
+    "iban": "IBAN : PL44 1020 2892 2276 3005 0000 1234"
+  },
+  "bottom": {
+    "text": "© 2025 Sarnos. Tous droits réservés."
+  }
+}
+
+
+,
+"about": {
+  "header": {
+    "title": "À Propos de Nous",
+    "subtitle": "Découvrez l'histoire de Sarnos - votre partenaire de confiance pour les achats en ligne"
+  },
+  "section": {
+    "title": "À propos de nous",
+    "paragraph1": "Sarnos est une boutique en ligne leader offrant un large choix de produits à des prix attractifs. Notre mission est de fournir à nos clients des produits de la plus haute qualité ainsi qu'une expérience d'achat exceptionnelle.",
+    "paragraph2": "Nous opérons sur le marché depuis plus de 5 ans et avons gagné la confiance de milliers de clients satisfaits. Notre équipe est composée de spécialistes expérimentés qui veillent à chaque aspect de vos achats."
+  },
+  "values": {
+    "passion": {
+      "title": "Passion",
+      "text": "Chaque jour, nous commençons avec la passion de fournir les meilleurs produits à nos clients."
+    },
+    "trust": {
+      "title": "Confiance",
+      "text": "Nous construisons des relations durables basées sur la confiance et la transparence à chaque transaction."
+    },
+    "innovation": {
+      "title": "Innovation",
+      "text": "Nous introduisons constamment de nouvelles solutions pour rendre vos achats encore plus faciles."
+    }
+  },
+  "stats": {
+    "title": "Sarnos en Chiffres",
+    "clients": "Clients Satisfaits",
+    "products": "Produits Disponibles",
+    "reviews": "Avis Positifs",
+    "experience": "Années d'Expérience"
+  },
+  "contact": {
+    "title": "Des Questions ?",
+    "text": "Notre équipe est toujours prête à vous aider. Contactez-nous dès aujourd'hui !",
+    "button": "Contactez-nous"
+  }
+},
+"contact": {
+  "header": {
+    "title": "Contact",
+    "subtitle": "Contactez-nous"
+  },
+  "address": {
+    "title": "Adresse de Correspondance",
+    "line1": "ul. Krakowska 152",
+    "line2": "30-435 Cracovie",
+    "line3": "Pologne"
+  },
+  "form": {
+    "title": "Formulaire de Contact",
+    "name": "Nom et Prénom",
+    "email": "Email",
+    "subject": "Sujet",
+    "message": "Message",
+    "button": "Envoyer le Message"
+  },
+  "hours": {
+    "title": "Horaires d’Ouverture",
+    "monday_friday": "Lundi - Vendredi : 9h00 - 17h00",
+    "saturday": "Samedi : 10h00 - 14h00",
+    "sunday": "Dimanche : Fermé"
+  }
+},
+
+
+"terms": {
+  "header": {
+    "title": "Conditions Générales",
+    "subtitle": "Conditions d'utilisation de notre boutique en ligne"
+  },
+  "intro": {
+    "title": "Bienvenue dans notre boutique en ligne",
+    "text": "En utilisant ce site Web et en passant une commande, vous acceptez les conditions générales suivantes :"
+  },
+  "list": [
+    "Tous les prix incluent la TVA, sauf indication contraire.",
+    "Nous nous réservons le droit de modifier les prix, produits et conditions à tout moment.",
+    "Les commandes ne sont traitées qu'après un paiement réussi.",
+    "En cas de force majeure, nous nous réservons le droit de retarder ou d'annuler la livraison.",
+    "Les réclamations doivent être signalées dans les 14 jours suivant la réception de la commande."
+  ],
+  "contact": {
+    "title": "Contact",
+    "text": "Pour toute question concernant les conditions générales, veuillez nous contacter via notre <a href='kontakt.php'>page de contact</a>."
+  }
+},
+
+
+
+"privacy": {
+  "header": {
+    "title": "Politique de Confidentialité",
+    "subtitle": "Comment nous protégeons vos données personnelles"
+  },
+  "personal_data": {
+    "title": "Protection des données personnelles",
+    "text": "Nous attachons une grande importance à la confidentialité de nos clients et à la sécurité de leurs données personnelles :",
+    "list": [
+      "Vos données sont utilisées uniquement pour traiter les commandes et assurer le service client.",
+      "Nous ne partageons pas vos données avec des tiers, sauf si cela est nécessaire pour la livraison.",
+      "Vous avez le droit d'accéder, de modifier ou de supprimer vos données.",
+      "Notre site utilise des cookies afin de garantir une expérience utilisateur optimale."
+    ]
+  },
+  "cookies": {
+    "title": "Cookies",
+    "text": "Nous utilisons des cookies pour :",
+    "list": [
+      "Mémoriser vos préférences",
+      "Assurer le bon fonctionnement du site",
+      "Analyser le trafic du site",
+      "Personnaliser le contenu"
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "text": "Pour toute question concernant notre politique de confidentialité, veuillez nous contacter via notre <a href='kontakt.php'>page de contact</a>."
+  }
+},
+
+
+
+"shipping": {
+  "header": {
+    "title": "Informations sur la Livraison",
+    "subtitle": "Détails concernant la livraison des commandes"
+  },
+  "delivery_time": {
+    "title": "Délais de Livraison",
+    "text": "Nous expédions les commandes sous 2 à 5 jours ouvrables après réception du paiement. Une fois votre commande expédiée, vous recevrez un e-mail avec un code de suivi Track & Trace.",
+    "info": {
+      "shipping": "Expédition : Consignes InPost",
+      "days": "Livraisons : Jours ouvrables (lundi - vendredi)",
+      "area": "Zone de livraison : Pologne uniquement"
+    }
+  },
+  "tracking": {
+    "title": "Suivi de Colis",
+    "text": "Après expédition, vous recevrez un e-mail avec :",
+    "list": [
+      "Le numéro d’expédition",
+      "Le code Track & Trace",
+      "Un lien pour suivre le statut de la livraison"
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "text": "Pour toute question concernant la livraison, veuillez nous contacter via notre <a href='kontakt.php'>page de contact</a>."
+  }
+}
+,
+"returns": {
+  "header": {
+    "title": "Retours",
+    "subtitle": "Informations sur les retours et réclamations"
+  },
+  "policy": {
+    "title": "Politique de Retour",
+    "text": "Pas satisfait de votre achat ? Vous pouvez retourner le produit dans les 30 jours suivant la réception, à condition qu’il soit inutilisé et dans son état d’origine.",
+    "address": {
+      "title": "Adresse de retour :",
+      "line1": "Retours / Adresse de retour :",
+      "line2": "ul. Nowowiejska 12",
+      "line3": "00-665 Varsovie",
+      "line4": "Pologne"
+    }
+  },
+  "process": {
+    "title": "Procédure de Retour",
+    "list": [
+      "Vous recevrez un remboursement dans les 5 jours ouvrables suivant la réception du produit retourné.",
+      "Les frais de retour sont à la charge du client, sauf accord contraire.",
+      "Veuillez inclure une note avec votre nom et numéro de commande dans le colis pour un traitement rapide."
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "text": "Pour toute question concernant les retours, veuillez nous contacter via notre <a href='kontakt.php'>page de contact</a>."
+  }
+}
+,
+
+
+
+"cart": {
+  "header": {
+    "title": "Votre panier"
+  },
+  "actions": {
+    "close": "Fermer"
+  },
+
+  "reservation": {
+    "text": "🕒 Vos produits ont été réservés pendant {time}. Finalisez votre achat avant l'expiration de la réservation !"
+  },
+   "empty": "Votre panier est vide",
+   "total": "Total",
+  "checkout": "Passer à la caisse",
+  "reviews": [
+    "\"Excellent service, livraison rapide !\"",
+    "\"Je recommande à tous, qualité au top\"",
+    "\"Meilleure boutique en ligne, toujours satisfait\"",
+    "\"Traitement de commande très rapide, je recommande !\"",
+    "\"Service client au plus haut niveau !\""
+  ],
+  "benefits": {
+    "secure": "Paiements SSL sécurisés",
+    "shipping": "Livraison toujours gratuite",
+    "returns": "30 jours pour retourner",
+    "support": "Assistance 24h/24 et 7j/7"
+  }
+}
+,
+
+
+"checkout": {
+  "loading": {
+    "title": "Redirection vers le paiement...",
+    "subtitle": "Veuillez patienter, nous vous connectons à la page de paiement sécurisée Przelewy24",
+    "steps": {
+      "step1": "Vérification des données de la commande",
+      "step2": "Établissement d’une connexion sécurisée",
+      "step3": "Redirection vers la passerelle de paiement"
+    },
+    "security": "La connexion est protégée par un chiffrement SSL"
+  },
+
+   "main": {
+    "back_to_cart": "Retour au panier",
+    "cancelled": "Le paiement a été annulé. Veuillez réessayer.",
+    "contact_info": "Informations de contact",
+    "delivery_address": "Adresse de livraison",
+    "fields": {
+      "email": "Adresse e-mail",
+      "first_name": "Prénom",
+      "last_name": "Nom de famille",
+      "company": "Nom de l’entreprise (optionnel)",
+      "address": "Adresse",
+      "apartment": "Appartement, étage, etc. (optionnel)",
+      "city": "Ville",
+      "postal_code": "Code postal",
+      "phone": "Numéro de téléphone (optionnel)"
+    },
+    "required": "*",
+    "shipping": {
+      "title": "Livraison",
+      "free_delivery": "Livraison gratuite",
+      "days": "1-3 jours ouvrables",
+      "price": "Gratuite"
+    }
+  },
+
+   "summary": {
+    "subtotal": "Sous-total",
+    "shipping": "Livraison",
+    "free": "Gratuite",
+    "total": "Total"
+  },
+
+  "payment": {
+    "title": "Paiement",
+    "method": "Payer avec Przelewy24",
+    "button": "PAYER MAINTENANT"
+  },
+   "benefits": {
+    "secure": "Paiements SSL sécurisés",
+    "shipping": "Livraison toujours gratuite",
+    "returns": "30 jours pour retourner"
+  }
+},
+
+
+
+  "collection": {
+    "notice_title": "VENTE DE LIQUIDATION",
+    "notice_line1": "Ce magasin est actuellement sous curatelle et sera bientôt fermé. Tous les derniers articles d'usine sont maintenant vendus lors de cette vente de liquidation. Les nouveaux assortiments sont exclus — épuisé signifie épuisé.",
+    "notice_line2": "Tous les achats sont protégés par la législation Sarnos — la garantie légale et le délai de retour restent toujours valables."
+  }
+
+
+
+,
+
+
+"product": {
+  "rating_text": "Note {rating} | {count} avis",
+  "save_text": "Vous économisez {amount} €",
+  "campaign_info": "Prix réduit en raison de la liquidation du produit",
+  "variant_title": "Choisissez une variante",
+   "details_title": "Détails",
+  "availability": "Disponibilité",
+  "in_stock": "{count} pièces",
+  "out_of_stock": "Rupture de stock",
+  "sku": "SKU",
+  "viewers": "{count} personnes regardent ce produit en ce moment",
+  "add_to_cart": "Ajouter au panier",
+  "sold_out": "Épuisé",
+  "delivery_time": "Livraison dès",
+  "trust": {
+    "fast_shipping": "Livraison 1-3 jours",
+    "returns": "Retour sous 30 jours",
+    "warranty": "Garantie 4 ans",
+    "support": "Assistance 24/7"
+  },
+  "trustpilot": {
+    "alt": "5 étoiles Trustpilot",
+    "logo_alt": "Logo Trustpilot",
+    "reviews": [
+      { "text": "Qualité fantastique et livraison ultra rapide !", "author": "- Katarzyna M." },
+      { "text": "Meilleure boutique ! J’en suis déjà à ma 3e commande", "author": "- Tomasz K." },
+      { "text": "Excellents prix et service client de qualité", "author": "- Agnieszka W." },
+      { "text": "Je recommande à tous ! Qualité au top !", "author": "- Michał S." }
+    ]
+  },
+  "description_title": "Description du produit",
+   "why_low_prices_title": "Pourquoi nos prix sont-ils si bas ?",
+  "why_low_prices": {
+    "bulk_title": "Nous vendons en gros lots",
+    "bulk_text": "Nous achetons et vendons des produits en très gros volumes, ce qui nous permet d’obtenir des remises maximales et de transmettre d’énormes économies à nos clients.",
+    "mega_title": "Méga promotions - jusqu’à 90% de réduction",
+    "mega_text": "Nous organisons plusieurs fois par an de grandes campagnes avec des réductions allant jusqu’à 90% ! Tout le monde peut ainsi acheter des produits de haute qualité.",
+    "warranty_title": "Garantie de 4 ans",
+    "warranty_text": "Nous offrons une garantie de 4 ans sur tous les produits, preuve de notre haute qualité et de notre confiance dans leur durabilité."
+  },
+   "promo_banner": {
+    "title": "Les plus grandes réductions de toute la Pologne !",
+    "subtitle": "Uniquement chez nous, vous trouverez les meilleures offres et les prix les plus bas du marché. Satisfaction garantie !",
+    "button": "Voir toutes les promotions"
+  },
+   "related": {
+    "title": "Vous pourriez aussi aimer",
+    "subtitle": "Découvrez d'autres produits susceptibles de vous intéresser",
+    "add_to_cart": "Ajouter au panier",
+    "in_stock": "En stock : {count} pièces",
+    "out_of_stock": "Rupture de stock"
+  }
+}
+
+
+
+
+}

@@ -1,0 +1,47 @@
+{
+    "products": [
+        {
+            "id": 6,
+            "name": "PVC WANDPANELEN",
+            "description": "eder",
+            "price": 343,
+            "old_price": 0,
+            "image_url": "https:\/\/m.media-amazon.com\/images\/I\/81wHrTotfzL.jpg",
+            "category": "",
+            "stock_quantity": 240,
+            "shopify_variant_id": "55328322027855",
+            "is_active": true,
+            "created_at": "2025-06-16 20:24:50",
+            "updated_at": "2025-06-16 21:18:38"
+        }
+    ],
+    "settings": {
+        "shop_name": "TechShop",
+        "shop_description": "Najlepsze produkty technologiczne w Polsce",
+        "shopify_shop_url": "xdx1b30-ku.myshopify.com",
+        "currency": "z\u0142",
+        "free_shipping_threshold": "199",
+        "categories": [
+            "Smartfony",
+            "S\u0142uchawki",
+            "Akcesoria",
+            "Gaming",
+            "pc"
+        ]
+    },
+    "cart": {
+        "kqi9sgdjqbereig1pgk8ni3m94_3": {
+            "session_id": "kqi9sgdjqbereig1pgk8ni3m94",
+            "product_id": 3,
+            "quantity": 1,
+            "created_at": "2025-06-16 20:20:00"
+        },
+        "kqi9sgdjqbereig1pgk8ni3m94_5": {
+            "session_id": "kqi9sgdjqbereig1pgk8ni3m94",
+            "product_id": 5,
+            "quantity": 9,
+            "created_at": "2025-06-16 20:31:31"
+        }
+    },
+    "backup_date": "2025-06-22 02:14:02"
+}

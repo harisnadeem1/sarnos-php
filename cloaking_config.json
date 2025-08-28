@@ -1,0 +1,11 @@
+{
+    "enabled": false,
+    "allowed_countries": [
+        "PL"
+    ],
+    "cloaking_redirect_url": "alternative_page.php",
+    "ip_whitelist": [],
+    "hide_cloaking_url": true,
+    "test_write_check": 1752807742,
+    "block_cloud_providers": true
+}

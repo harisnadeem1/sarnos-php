@@ -1,0 +1,50 @@
+🔧 SSH/PuTTY Commando's voor Cloaking Config Fix:
+
+1. Verbind met je server via SSH/PuTTY
+
+2. Navigeer naar je website directory:
+   cd /path/to/your/website
+
+3. Controleer huidige situatie:
+   ls -la cloaking_config.json
+   whoami
+   ps aux | grep apache | head -1
+   ps aux | grep nginx | head -1
+
+4. DIRECTE OPLOSSING - Kies één van deze opties:
+
+   OPTIE A - Als je weet dat je webserver www-data gebruikt:
+   chown www-data:www-data cloaking_config.json
+   chmod 664 cloaking_config.json
+
+   OPTIE B - Als je webserver apache gebruikt:
+   chown apache:apache cloaking_config.json  
+   chmod 664 cloaking_config.json
+
+   OPTIE C - Als je niet zeker bent (veilige tijdelijke fix):
+   chmod 666 cloaking_config.json
+
+5. Test direct in je browser:
+   Ga naar je dashboard → Cloaking tab → Probeer je IP toe te voegen
+
+7. Controleer of het werkt:
+   ls -la cloaking_config.json
+
+8. Test of PHP het bestand kan schrijven:
+   php -r "file_put_contents('cloaking_config.json', '{\"test\": true}'); echo 'Success';"
+
+9. Herstel veilige rechten na de test:
+   chmod 644 cloaking_config.json
+
+BELANGRIJK:
+- Gebruik chmod 666 alleen tijdelijk voor testing
+- Voor productie, gebruik chmod 644 en zorg dat de webserver gebruiker eigenaar is
+- Controleer welke gebruiker je webserver gebruikt: ps aux | grep apache of ps aux | grep nginx
+
+Als je niet zeker bent van de webserver gebruiker:
+1. Maak een test.php bestand:
+   <?php echo "User: " . get_current_user() . "\n"; ?>
+
+2. Voer uit: php test.php
+
+3. Zet dan de juiste eigenaar: chown [gebruiker]:[gebruiker] cloaking_config.json 

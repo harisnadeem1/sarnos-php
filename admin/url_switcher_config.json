@@ -1,0 +1,47 @@
+{
+    "enabled": true,
+    "url_patterns": {
+        "pattern_1": "product.php?slug={slug}&ref={ref}",
+        "pattern_2": "p\/{slug}?utm_source={source}&utm_medium={medium}",
+        "pattern_3": "shop\/product\/{slug}?campaign={campaign}",
+        "pattern_4": "item\/{slug}?source={source}&ref={ref}",
+        "pattern_5": "buy\/{slug}?utm_campaign={campaign}&utm_term={term}"
+    },
+    "utm_sources": [
+        "tiktok",
+        "facebook",
+        "instagram",
+        "google",
+        "youtube"
+    ],
+    "utm_mediums": [
+        "reel",
+        "social",
+        "story",
+        "post",
+        "video"
+    ],
+    "utm_campaigns": [
+        "winter_deals",
+        "summer_sale",
+        "limited_time",
+        "mega_discount",
+        "flash_sale"
+    ],
+    "utm_terms": [
+        "amazing_offer",
+        "best_price",
+        "top_quality",
+        "fast_delivery",
+        "great_deal"
+    ],
+    "ref_codes": [
+        "REF001",
+        "REF005",
+        "REF003",
+        "REF004",
+        "REF002"
+    ],
+    "rotation_interval": 3600,
+    "last_rotation": 1753002629
+}

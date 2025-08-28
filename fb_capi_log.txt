@@ -1,0 +1,49 @@
+2025-08-13T20:29:08+00:00 - 
+2025-08-13T20:32:00+00:00 - 
+2025-08-13T20:32:05+00:00 - 
+2025-08-13T20:43:13+00:00 - CURL ERROR: SSL certificate problem: unable to get local issuer certificate
+2025-08-13T21:34:58+00:00 - ATC: 
+2025-08-13T21:35:14+00:00 - ATC: 
+2025-08-13T21:38:12+00:00 - ATC: 
+2025-08-13T21:39:40+00:00 - ATC: 
+2025-08-13T21:40:00+00:00 - ATC: 
+2025-08-13T21:40:11+00:00 - ATC: 
+2025-08-13T21:41:23+00:00 - ATC: 
+2025-08-13T21:42:18+00:00 - ATC: 
+2025-08-13T21:43:57+00:00 - ATC: 
+2025-08-13T21:44:04+00:00 - ATC: 
+2025-08-13T21:45:24+00:00 - ATC: 
+2025-08-13T21:45:38+00:00 - ATC: 
+2025-08-14T17:38:36+00:00 - ATC: 
+2025-08-14T17:39:21+00:00 - CURL ERROR: SSL certificate problem: unable to get local issuer certificate
+2025-08-14T17:39:35+00:00 - CURL ERROR: SSL certificate problem: unable to get local issuer certificate
+2025-08-14T17:39:40+00:00 - CURL ERROR: SSL certificate problem: unable to get local issuer certificate
+2025-08-14T17:39:58+00:00 - ATC: 
+2025-08-14T17:40:04+00:00 - CURL ERROR: SSL certificate problem: unable to get local issuer certificate
+2025-08-14T17:40:31+00:00 - CURL ERROR: SSL certificate problem: unable to get local issuer certificate
+2025-08-14T17:43:19+00:00 - CURL ERROR: SSL certificate problem: unable to get local issuer certificate
+2025-08-14T17:43:47+00:00 - CURL ERROR: SSL certificate problem: unable to get local issuer certificate
+2025-08-14T17:46:15+00:00 - CURL ERROR: SSL certificate problem: unable to get local issuer certificate
+2025-08-14T17:49:51+00:00 - CURL ERROR: SSL certificate problem: unable to get local issuer certificate
+2025-08-14T17:49:54+00:00 - CURL ERROR: SSL certificate problem: unable to get local issuer certificate
+2025-08-14T17:50:34+00:00 - CURL ERROR: SSL certificate problem: unable to get local issuer certificate
+2025-08-14T17:52:29+00:00 - ATC: 
+2025-08-14T17:52:56+00:00 - CURL ERROR: SSL certificate problem: unable to get local issuer certificate
+2025-08-14T17:53:51+00:00 - CURL ERROR: SSL certificate problem: unable to get local issuer certificate
+2025-08-14T17:55:25+00:00 - CURL ERROR: SSL certificate problem: unable to get local issuer certificate
+2025-08-14T18:04:35+00:00 - ATC: 
+2025-08-14T18:05:06+00:00 - CURL ERROR: SSL certificate problem: unable to get local issuer certificate
+2025-08-17T13:22:33+00:00 - ATC: 
+2025-08-18T13:56:58+00:00 - CURL ERROR: SSL certificate problem: unable to get local issuer certificate
+2025-08-18T16:30:42+00:00 - CURL ERROR: SSL certificate problem: unable to get local issuer certificate
+2025-08-20T01:17:16+00:00 - ATC: 
+2025-08-27T15:03:17+00:00 - ATC: 
+2025-08-27T17:47:17+00:00 - ATC: 
+2025-08-27T17:47:37+00:00 - ATC: 
+2025-08-27T18:53:21+00:00 - ATC: 
+2025-08-27T22:20:25+00:00 - CURL ERROR: SSL certificate problem: unable to get local issuer certificate
+2025-08-27T22:23:06+00:00 - CURL ERROR: SSL certificate problem: unable to get local issuer certificate
+2025-08-27T22:24:10+00:00 - CURL ERROR: SSL certificate problem: unable to get local issuer certificate
+2025-08-27T22:24:40+00:00 - CURL ERROR: SSL certificate problem: unable to get local issuer certificate
+2025-08-27T22:25:30+00:00 - CURL ERROR: SSL certificate problem: unable to get local issuer certificate
+2025-08-27T22:31:14+00:00 - CURL ERROR: SSL certificate problem: unable to get local issuer certificate
