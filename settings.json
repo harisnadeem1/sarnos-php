@@ -4,14 +4,15 @@
     "shopify_shop_url": "4hhabj-ny.myshopify.com",
     "currency": "z\u0142",
     "free_shipping_threshold": "199",
-    "categories": [
-        "Zabawki na zewn\u0105trz",
-        "meble",
-        "meble wypoczynkowe",
-        "Prysznice",
-        "G\u0142o\u015bniki Imprezowe",
-        "lustro \u0142azienkowe.",
-        "Ekspres do Kawy",
-        "Zestaw narz\u0119dzi"
-    ]
+   "categories": [
+    "Buitenspeelgoed",
+    "Meubels",
+    "Lounge meubels",
+    "Douches",
+    "Feestluidsprekers",
+    "Badkamer spiegels",
+    "Koffiezetapparaten",
+    "Gereedschapsset"
+]
+
 }
