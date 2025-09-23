@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['password'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Admin Login - Sklepoll</title>
+            <title>Admin Login - Sarnos</title>
     
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -211,7 +211,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['password'])) {
 <body>
     <div class="login-container">
                           <div class="logo">
-            <h1 style="color: #333; font-size: 2.5rem; font-weight: 700; margin: 0 0 20px 0; text-align: center;">Sklepoll</h1>
+            <h1 style="color: #333; font-size: 2.5rem; font-weight: 700; margin: 0 0 20px 0; text-align: center;">Sarnos</h1>
         </div>
 
         <?php if (!empty($error_message)): ?>
