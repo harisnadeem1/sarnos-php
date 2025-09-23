@@ -11,46 +11,46 @@ if (!isset($_SESSION['cart_session_id'])) {
     $_SESSION['cart_session_id'] = session_id();
 }
 
-// Handle cart actions
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
-    $db = Database::getInstance();
+// // Handle cart actions
+// if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
+//     $db = Database::getInstance();
 
-    switch ($_POST['action']) {
-        case 'add_to_cart':
-            $productId = intval($_POST['product_id']);
-            $quantity = intval($_POST['quantity']);
-            $variantIndex = isset($_POST['variant_index']) && $_POST['variant_index'] !== '' ? intval($_POST['variant_index']) : null;
-            $variantData = null;
-            if ($variantIndex !== null && isset($product['variants'][$variantIndex])) {
-                $variantData = $product['variants'][$variantIndex];
-            }
-            if ($productId > 0 && $quantity > 0) {
-                $db->addToCart($_SESSION['cart_session_id'], $productId, $quantity, $variantIndex, $variantData);
-                $success_message = "Produkt dodany do koszyka!";
-            }
-            break;
+//     switch ($_POST['action']) {
+//         case 'add_to_cart':
+//             $productId = intval($_POST['product_id']);
+//             $quantity = intval($_POST['quantity']);
+//             $variantIndex = isset($_POST['variant_index']) && $_POST['variant_index'] !== '' ? intval($_POST['variant_index']) : null;
+//             $variantData = null;
+//             if ($variantIndex !== null && isset($product['variants'][$variantIndex])) {
+//                 $variantData = $product['variants'][$variantIndex];
+//             }
+//             if ($productId > 0 && $quantity > 0) {
+//                 $db->addToCart($_SESSION['cart_session_id'], $productId, $quantity, $variantIndex, $variantData);
+//                  $success_message = $texts['product']['success_message'];
+//             }
+//             break;
 
-        case 'update_cart':
-            $productId = intval($_POST['product_id']);
-            $quantity = intval($_POST['quantity']);
-            $db->updateCartQuantity($_SESSION['cart_session_id'], $productId, $quantity);
-            break;
+//         case 'update_cart':
+//             $productId = intval($_POST['product_id']);
+//             $quantity = intval($_POST['quantity']);
+//             $db->updateCartQuantity($_SESSION['cart_session_id'], $productId, $quantity);
+//             break;
 
-        case 'remove_from_cart':
-            $productId = intval($_POST['product_id']);
-            $db->removeFromCart($_SESSION['cart_session_id'], $productId);
-            $success_message = "Produkt usunięty z koszyka!";
-            break;
+//         case 'remove_from_cart':
+//             $productId = intval($_POST['product_id']);
+//             $db->removeFromCart($_SESSION['cart_session_id'], $productId);
+//             $success_message = "Produkt usunięty z koszyka!";
+//             break;
 
-        case 'checkout':
-            $cartItems = $db->getCartItems($_SESSION['cart_session_id']);
-            if (!empty($cartItems)) {
-                header("Location: checkout_redirect.php");
-                exit();
-            }
-            break;
-    }
-}
+//         case 'checkout':
+//             $cartItems = $db->getCartItems($_SESSION['cart_session_id']);
+//             if (!empty($cartItems)) {
+//                 header("Location: checkout_redirect.php");
+//                 exit();
+//             }
+//             break;
+//     }
+// }
 
 // Get database instance
 $db = Database::getInstance();
@@ -119,6 +119,60 @@ if (!empty($product['translations'][$lang])) {
 }
 
 
+// Handle cart actions
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
+    $db = Database::getInstance();
+
+    switch ($_POST['action']) {
+        case 'add_to_cart':
+            $productId = intval($_POST['product_id']);
+            $quantity = intval($_POST['quantity']);
+            $variantIndex = isset($_POST['variant_index']) && $_POST['variant_index'] !== '' ? intval($_POST['variant_index']) : null;
+            $variantData = null;
+            if ($variantIndex !== null && isset($product['variants'][$variantIndex])) {
+                $variantData = $product['variants'][$variantIndex];
+            }
+            if ($productId > 0 && $quantity > 0) {
+                $db->addToCart($_SESSION['cart_session_id'], $productId, $quantity, $variantIndex, $variantData);
+                  // Hardcoded translations
+                if ($lang === 'fr') {
+                    $success_message = "Produit ajouté au panier!";
+                } elseif ($lang === 'nl') {
+                    $success_message = "Product toegevoegd aan winkelwagen!";
+                } else {
+                    $success_message = "Produkt dodany do koszyka!";
+                }
+            }
+            break;
+
+        case 'update_cart':
+            $productId = intval($_POST['product_id']);
+            $quantity = intval($_POST['quantity']);
+            $db->updateCartQuantity($_SESSION['cart_session_id'], $productId, $quantity);
+            break;
+
+        case 'remove_from_cart':
+            $productId = intval($_POST['product_id']);
+            $db->removeFromCart($_SESSION['cart_session_id'], $productId);
+              // Hardcoded translations
+            if ($lang === 'fr') {
+                $success_message = "Produit supprimé du panier!";
+            } elseif ($lang === 'nl') {
+                $success_message = "Product verwijderd uit winkelwagen!";
+            } else {
+                $success_message = "Produkt usunięty z koszyka!";
+            }
+            break;
+
+        case 'checkout':
+            $cartItems = $db->getCartItems($_SESSION['cart_session_id']);
+            if (!empty($cartItems)) {
+                header("Location: checkout_redirect.php");
+                exit();
+            }
+            break;
+    }
+}
 
 $shop_name = $db->getSetting('shop_name') ?: 'TechShop';
 ?><!DOCTYPE html>

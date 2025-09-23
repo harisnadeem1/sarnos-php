@@ -449,11 +449,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 
 <body>
-    <header class="header">
+   <header class="header">
         <div class="header-container">
             <div class="logo">
                 <a href="index.php">
-                    <img src="logo.jpeg" alt="Sklepoll Logo">
+                    <img src="<?php echo $texts['checkout']['header']['logo']; ?>" alt="<?php echo $texts['checkout']['header']['logo_alt']; ?>">
                 </a>
             </div>
         </div>
@@ -605,7 +605,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </div>
             </div>
 
-            <div class="payment-section">
+           <div class="payment-section">
                 <h2 class="section-title">
                     <?php echo $texts['checkout']['payment']['title']; ?>
                 </h2>
@@ -613,16 +613,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="bunq-payment-info">
                     <div class="bunq-logo">
                         <i class="fas fa-university" style="color: #0ea5e9;"></i>
-                        <span style="font-weight: 600; color: #0369a1;">Bunq Payment</span>
+                        <span style="font-weight: 600; color: #0369a1;"><?php echo $texts['checkout']['payment']['title']; ?></span>
                     </div>
                     <div class="bunq-info-text">
-                        You will be redirected to Bunq to complete your payment securely.
+                        <?php echo $texts['checkout']['payment']['method']; ?>
                     </div>
                 </div>
 
                 <button id="payNowButton" class="payment-button" type="submit" disabled>
                     <i class="fas fa-lock" style="margin-right: 8px;"></i>
-                    Pay €<?php echo number_format($cartTotal, 2); ?> with Bunq
+                    <?php echo $texts['checkout']['payment']['button']; ?> €<?php echo number_format($cartTotal, 2); ?>
                 </button>
             </div>
             </form>

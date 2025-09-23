@@ -1476,18 +1476,18 @@ $linkFr = $_SERVER['PHP_SELF'] . '?' . http_build_query($paramsFr);
                 <?php if (isset($item['old_price']) && $item['old_price'] > 0 && $item['old_price'] > $item['price']): ?>
                     <div class="cart-price-with-discount">
                         <span class="cart-old-price">
-                            <?php echo number_format($item['old_price'] * $item['quantity'], 2); ?> zł
+                            <?php echo number_format($item['old_price'] * $item['quantity'], 2); ?> €
                         </span>
                         <span class="cart-current-price">
-                            <?php echo number_format($item['price'] * $item['quantity'], 2); ?> zł
+                            <?php echo number_format($item['price'] * $item['quantity'], 2); ?> €
                         </span>
                         <span class="cart-discount-badge">
-                            -<?php echo number_format($item['old_price'] - $item['price'], 2); ?> zł
+                            -<?php echo number_format($item['old_price'] - $item['price'], 2); ?> €
                         </span>
                     </div>
                 <?php else: ?>
                     <div class="cart-item-price">
-                        <?php echo number_format($item['price'] * $item['quantity'], 2); ?> zł
+                        <?php echo number_format($item['price'] * $item['quantity'], 2); ?> €
                     </div>
                 <?php endif; ?>
             </div>

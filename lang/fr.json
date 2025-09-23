@@ -401,6 +401,10 @@
 
 
 "checkout": {
+  "header": {
+    "logo": "Dutch.jpeg",
+    "logo_alt": "Sarnos Logo"
+  },
   "loading": {
     "title": "Redirection vers le paiement...",
     "subtitle": "Veuillez patienter, nous vous connectons à la page de paiement sécurisée Przelewy24",
@@ -445,9 +449,11 @@
   },
 
   "payment": {
-    "title": "Paiement",
-    "method": "Payer avec Przelewy24",
+    "title": "Bunq Paiement",
+    "method": "Vous serez redirigé vers Bunq pour finaliser votre paiement en toute sécurité.",
     "button": "PAYER MAINTENANT"
+    
+    
   },
    "benefits": {
     "secure": "Paiements SSL sécurisés",
@@ -519,7 +525,9 @@
     "subtitle": "Découvrez d'autres produits susceptibles de vous intéresser",
     "add_to_cart": "Ajouter au panier",
     "in_stock": "En stock : {count} pièces",
-    "out_of_stock": "Rupture de stock"
+    "out_of_stock": "Rupture de stock",
+    "success_message": "Produit ajouté au panier!"
+    
   }
 }
 

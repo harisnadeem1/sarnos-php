@@ -364,6 +364,10 @@
 },
 
 "checkout": {
+  "header": {
+    "logo": "Dutch.jpeg",
+    "logo_alt": "Sarnos Logo"
+  },
   "loading": {
     "title": "Doorverwijzen naar betaling...",
     "subtitle": "Even geduld, we verbinden je met de beveiligde betalingspagina van Przelewy24",
@@ -408,8 +412,8 @@
   },
 
   "payment": {
-    "title": "Betaling",
-    "method": "Betaal met Przelewy24",
+    "title": "Bunq Betaling",
+    "method": "BU wordt doorgestuurd naar Bunq om uw betaling veilig af te ronden.",
     "button": "NU BETALEN"
   },
    "benefits": {
@@ -479,7 +483,9 @@
     "subtitle": "Bekijk andere producten die je misschien interesseren",
     "add_to_cart": "In winkelwagen",
     "in_stock": "Op voorraad: {count} stuks",
-    "out_of_stock": "Niet op voorraad"
+    "out_of_stock": "Niet op voorraad",
+    "success_message": "Product toegevoegd aan winkelwagen!"
+
   }
 }
 
