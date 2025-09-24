@@ -411,7 +411,7 @@
 
   "payment": {
     "title": "Bunq Betaling",
-    "method": "BU wordt doorgestuurd naar Bunq om uw betaling veilig af te ronden.",
+    "method": "U wordt doorgestuurd naar Bunq om uw betaling veilig af te ronden.",
     "button": "NU BETALEN"
   },
    "benefits": {
