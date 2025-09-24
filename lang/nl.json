@@ -410,8 +410,8 @@
   },
 
   "payment": {
-    "title": "Ideal Betaling",
-    "method": "U wordt doorgestuurd naar Ideal om uw betaling veilig af te ronden.",
+    "title": "iDeal Betaling",
+    "method": "U wordt doorgestuurd naar iDeal om uw betaling veilig af te ronden.",
     "button": "NU BETALEN"
   },
    "benefits": {

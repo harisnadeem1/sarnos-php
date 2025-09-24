@@ -446,8 +446,8 @@
   },
 
   "payment": {
-    "title": "Ideal Paiement",
-    "method": "Vous serez redirigé vers Ideal pour finaliser votre paiement en toute sécurité.",
+    "title": "iDeal Paiement",
+    "method": "Vous serez redirigé vers iDeal pour finaliser votre paiement en toute sécurité.",
     "button": "PAYER MAINTENANT"
     
     
