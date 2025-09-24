@@ -99,6 +99,27 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Finalizacja zamówienia - Sklepoll</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod ?
+n.callMethod.apply(n,arguments) : n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n; n.push=n; n.loaded=!0; n.version='2.0';
+n.queue=[]; t=b.createElement(e); t.async=!0;
+t.src=v; s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '698814149641552');
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=698814149641552&ev=PageView&noscript=1" />
+</noscript>
+
+
+
     <style>
         * {
             margin: 0;
@@ -673,30 +694,83 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
     </div>
 
-    <script>
-        function checkRequiredFields() {
-            const requiredFields = ['email', 'first_name', 'last_name', 'address', 'city', 'postal_code'];
-            const payNowButton = document.getElementById('payNowButton');
-            const allFilled = requiredFields.every(field => {
-                const input = document.getElementById(field);
-                return input.value.trim() !== '';
+   <script>
+    function checkRequiredFields() {
+        const requiredFields = ['email', 'first_name', 'last_name', 'address', 'city', 'postal_code'];
+        const payNowButton = document.getElementById('payNowButton');
+        const allFilled = requiredFields.every(field => {
+            const input = document.getElementById(field);
+            return input.value.trim() !== '';
+        });
+        payNowButton.disabled = !allFilled;
+    }
+
+    document.querySelectorAll('input[required]').forEach(input => {
+        input.addEventListener('input', checkRequiredFields);
+    });
+
+    // Initial check
+    checkRequiredFields();
+
+    // Handle form submission with Facebook Pixel tracking
+    document.getElementById('checkoutForm').addEventListener('submit', function(e) {
+        e.preventDefault(); // Prevent immediate form submission
+        
+        const form = this;
+        const cartTotal = <?php echo json_encode($cartTotal); ?>;
+        const currency = 'EUR';
+        
+        // Prepare cart items for tracking
+        const cartItems = <?php echo json_encode(array_map(function($item) {
+            return [
+                'item_id' => $item['product_id'],
+                'item_name' => $item['current_name'] ?? $item['name'],
+                'quantity' => $item['quantity'],
+                'price' => $item['price']
+            ];
+        }, $cartItems)); ?>;
+        
+        // Track InitiateCheckout event
+        if (typeof fbq !== 'undefined') {
+            fbq('track', 'InitiateCheckout', {
+                value: cartTotal,
+                currency: currency,
+                num_items: <?php echo array_sum(array_column($cartItems, 'quantity')); ?>,
+                contents: cartItems.map(item => ({
+                    id: item.item_id,
+                    quantity: item.quantity,
+                    item_price: item.price
+                }))
             });
-            payNowButton.disabled = !allFilled;
+            
+            console.log('InitiateCheckout tracked:', {
+                value: cartTotal,
+                currency: currency,
+                items: cartItems.length
+            });
         }
-
-        document.querySelectorAll('input[required]').forEach(input => {
-            input.addEventListener('input', checkRequiredFields);
-        });
-
-        // Initial check
-        checkRequiredFields();
-
-        // Handle form submission
-        document.getElementById('checkoutForm').addEventListener('submit', function(e) {
-            // Form will be submitted normally to redirect to Bunq
-            // Sales data will be logged on the server side before redirect
-        });
-    </script>
+        
+        // Optional: Send to server-side tracking endpoint
+        fetch('track-checkout.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                event: 'InitiateCheckout',
+                value: cartTotal,
+                currency: currency,
+                items: cartItems,
+                customer_email: document.getElementById('email').value
+            })
+        }).catch(err => console.error('Server-side tracking failed:', err));
+        
+        // Submit form after tracking (small delay to ensure tracking fires)
+        setTimeout(function() {
+            form.submit();
+        }, 300);
+    });
+</script>
 </body>
 
 </html>
