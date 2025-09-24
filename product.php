@@ -3073,6 +3073,15 @@ $shop_name = $db->getSetting('shop_name') ?: 'TechShop';
     <div class="cart-overlay" id="overlay" onclick="closeCart()"></div>
 
     <script>
+        <?php if (isset($success_message) && (strpos($success_message, 'toegevoegd') !== false || strpos($success_message, 'dodany') !== false || strpos($success_message, 'ajouté') !== false)): ?>
+        // Wait for page to fully load, then open cart
+        document.addEventListener('DOMContentLoaded', function() {
+            // Small delay to ensure smooth animation
+            setTimeout(function() {
+                openCart();
+            }, 300);
+        });
+    <?php endif; ?>
         function increaseQuantity() {
             const input = document.getElementById('quantity');
             const max = parseInt(input.getAttribute('max'));
@@ -3229,7 +3238,7 @@ $shop_name = $db->getSetting('shop_name') ?: 'TechShop';
 
                     // Auto-open cart after a short delay
                     setTimeout(function () {
-                        openCart();
+                        // openCart();
                         // Reset button after 2 seconds
                         setTimeout(function () {
                             submitBtn.innerHTML = originalText;
