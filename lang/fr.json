@@ -108,20 +108,20 @@
       {
         "stars": 5,
         "text": "Des prix fantastiques et une livraison super rapide ! Je recommande à tous, des produits de la plus haute qualité.",
-        "author": "Anna Kowalska",
-        "location": "Varsovie"
+       "author": "Lisa Van Veen",
+                    "location": "Rotterdam"
       },
       {
         "stars": 5,
         "text": "Un service client de très haut niveau. Problèmes résolus immédiatement. Très professionnel !",
-        "author": "Piotr Nowak",
-        "location": "Cracovie"
+        "author": "Lars Stoel",
+                    "location": "Amsterdam"
       },
       {
         "stars": 5,
         "text": "Toujours les meilleures promotions ! J’ai déjà économisé des centaines d’euros sur mes achats. Super soldes !",
-        "author": "Magdalena Wiśniewska",
-        "location": "Gdańsk"
+       "author": "Peter de Jong",
+                    "location": "Alkmaar"
       }
     ]
   }
