@@ -82,7 +82,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     
     // Create Bunq payment URL
     $bunq_amount = number_format($cartTotal, 2, '.', '');
-    $bunq_url = "https://bunq.me/NTaflan/" . $bunq_amount;
+    $bunq_url = "https://bunq.me/NTaflan/" . $bunq_amount . "/-/ideal";
     
     // Redirect to Bunq payment
     header("Location: " . $bunq_url);
