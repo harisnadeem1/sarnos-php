@@ -441,7 +441,7 @@ src="https://www.facebook.com/tr?id=698814149641552&ev=PageView&noscript=1" />
         }
 
         .bunq-logo img {
-            height: 24px;
+            height: 32px !important;
         }
 
         .bunq-info-text {
@@ -661,14 +661,17 @@ src="https://www.facebook.com/tr?id=698814149641552&ev=PageView&noscript=1" />
                 </h2>
                 
                 <div class="bunq-payment-info">
-                    <div class="bunq-logo">
-                        <i class="fas fa-university" style="color: #0ea5e9;"></i>
-                        <span style="font-weight: 600; color: #0369a1;"><?php echo $texts['checkout']['payment']['title']; ?></span>
-                    </div>
-                    <div class="bunq-info-text">
-                        <?php echo $texts['checkout']['payment']['method']; ?>
-                    </div>
-                </div>
+    <div class="bunq-logo">
+        <img src="Ideal.webp" 
+             alt="iDEAL Logo" 
+             style="height: 20px; vertical-align: middle; margin-right: 5px;">
+        <span style="font-weight: 600; color: #0369a1;"><?php echo $texts['checkout']['payment']['title']; ?></span>
+    </div>
+    <div class="bunq-info-text">
+        <?php echo $texts['checkout']['payment']['method']; ?>
+    </div>
+</div>
+
 
                 <button id="payNowButton" class="payment-button" type="submit" disabled>
                     <i class="fas fa-lock" style="margin-right: 8px;"></i>
