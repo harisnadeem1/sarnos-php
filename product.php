@@ -2911,8 +2911,8 @@ $shop_name = $db->getSetting('shop_name') ?: 'TechShop';
         <div style="max-width: 1100px; margin: 0 auto; text-align: center; color: white;">
             <h2
                 style="font-size: 2rem; font-weight: 700; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; gap: 15px;">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Flag_of_Poland.svg" alt="Polska"
-                    style="width: 36px; height: 24px; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+                <img src="netherlands-flag.svg" alt="Polska"
+                    style="width: 36px; height: auto; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
                 <?php echo $texts['product']['promo_banner']['title']; ?>
             </h2>
             <p style="font-size: 1.1rem; max-width: 600px; margin: 0 auto 25px auto; opacity: 0.9;">
@@ -3287,38 +3287,48 @@ $shop_name = $db->getSetting('shop_name') ?: 'TechShop';
             calculateDeliveryDate();
         });
 
+
+        
+
         // Function to calculate delivery date (current date + 3 days)
-        function calculateDeliveryDate() {
-            const today = new Date();
-            let deliveryDate = new Date(today);
+        const currentLang = "<?php echo $lang; ?>"; 
+       function calculateDeliveryDate() {
+    const today = new Date();
+    let deliveryDate = new Date(today);
 
-            // Add 3 days (including weekends)
-            deliveryDate.setDate(deliveryDate.getDate() + 3);
+    // Add 3 days (including weekends)
+    deliveryDate.setDate(deliveryDate.getDate() + 3);
 
-            // Polish day names
-            const dayNames = [
-                'niedzielę', 'poniedziałek', 'wtorek', 'środę',
-                'czwartek', 'piątek', 'sobotę'
-            ];
+    // Hardcoded day and month names for each language
+    const dayNames = {
+        nl: ['zondag', 'maandag', 'dinsdag', 'woensdag', 'donderdag', 'vrijdag', 'zaterdag'],
+        fr: ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi']
+    };
 
-            // Polish month names
-            const monthNames = [
-                'stycznia', 'lutego', 'marca', 'kwietnia', 'maja', 'czerwca',
-                'lipca', 'sierpnia', 'września', 'października', 'listopada', 'grudnia'
-            ];
+    const monthNames = {
+        nl: ['januari', 'februari', 'maart', 'april', 'mei', 'juni', 'juli', 'augustus', 'september', 'oktober', 'november', 'december'],
+        fr: ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre']
+    };
 
-            const dayName = dayNames[deliveryDate.getDay()];
-            const day = deliveryDate.getDate();
-            const month = monthNames[deliveryDate.getMonth()];
+    // Pick based on current language or fallback to Dutch
+    const lang = currentLang in dayNames ? currentLang : 'nl';
 
-            const formattedDate = `${dayName}, ${day} ${month}`;
+    const dayName = dayNames[lang][deliveryDate.getDay()];
+    const day = deliveryDate.getDate();
+    const month = monthNames[lang][deliveryDate.getMonth()];
 
-            // Update the delivery date element
-            const deliveryDateElement = document.getElementById('deliveryDate');
-            if (deliveryDateElement) {
-                deliveryDateElement.textContent = formattedDate;
-            }
-        }
+    const formattedDate = `${dayName}, ${day} ${month}`;
+
+    // Update the delivery date element
+    const deliveryDateElement = document.getElementById('deliveryDate');
+    if (deliveryDateElement) {
+        deliveryDateElement.textContent = formattedDate;
+    }
+}
+
+// Run the function
+calculateDeliveryDate();
+
     </script>
 
     <script>

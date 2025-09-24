@@ -73,12 +73,12 @@ $shop_bank_iban = $db->getSetting('shop_bank_iban');
         
         <div class="footer-section">
             <h3><?php echo $texts['footer']['company']['title']; ?></h3>
-            <p><?php echo $texts['footer']['company']['nip']; ?></p>
-            <p><?php echo $texts['footer']['company']['regon']; ?></p>
-            <p><?php echo $texts['footer']['company']['krs']; ?></p>
-            <p><?php echo $texts['footer']['company']['bank']; ?></p>
+            <p><?php echo $texts['footer']['company']['legal_name']; ?></p>
+            <p><?php echo $texts['footer']['company']['kvk']; ?></p>
+            <p><?php echo $texts['footer']['company']['vat']; ?></p>
+            <!-- <p><?php echo $texts['footer']['company']['bank']; ?></p>
             <p><?php echo $texts['footer']['company']['swift']; ?></p>
-            <p><?php echo $texts['footer']['company']['iban']; ?></p>
+            <p><?php echo $texts['footer']['company']['iban']; ?></p> -->
         </div>
     </div>
     

@@ -156,10 +156,10 @@
   },
   "contact": {
     "title": "Contact",
-    "email": "kontakt@Sarnos.com",
-    "address_line1": "ul. Krakowska 152",
-    "address_line2": "30-435 Cracovie",
-    "address_line3": "Pologne"
+    "email": "klantenservice@sarnos.nl",
+    "address_line1": "Herengracht 34",
+    "address_line2": "1015 BL Amsterdam",
+    "address_line3": "Nederland"
   },
   "info": {
     "title": "Informations",
@@ -171,12 +171,9 @@
   },
   "company": {
     "title": "Données de l'entreprise",
-    "nip": "NIP : 675-15-67-890",
-    "regon": "REGON : 385678901",
-    "krs": "KRS : 0000789456",
-    "bank": "Banque : PKO Bank Sarnos",
-    "swift": "SWIFT : PKOPPLPW",
-    "iban": "IBAN : PL44 1020 2892 2276 3005 0000 1234"
+   "legal_name": "Raison sociale : Sarnos",
+"kvk": "Registre du commerce : 73829145",
+"vat": "Numéro de TVA : NL301945782B03"
   },
   "bottom": {
     "text": "© 2025 Sarnos. Tous droits réservés."
@@ -467,7 +464,9 @@
   "collection": {
     "notice_title": "VENTE DE LIQUIDATION",
     "notice_line1": "Ce magasin est actuellement sous curatelle et sera bientôt fermé. Tous les derniers articles d'usine sont maintenant vendus lors de cette vente de liquidation. Les nouveaux assortiments sont exclus — épuisé signifie épuisé.",
-    "notice_line2": "Tous les achats sont protégés par la législation Sarnos — la garantie légale et le délai de retour restent toujours valables."
+    "notice_line2": "Tous les achats sont protégés par la législation Sarnos — la garantie légale et le délai de retour restent toujours valables.",
+    "view_button": "Voir",
+"delivery_info": "Délai de livraison : 1-3 jours ouvrables"
   }
 
 
@@ -516,7 +515,7 @@
     "warranty_text": "Nous offrons une garantie de 4 ans sur tous les produits, preuve de notre haute qualité et de notre confiance dans leur durabilité."
   },
    "promo_banner": {
-    "title": "Les plus grandes réductions de toute la Pologne !",
+    "title": "Les plus grandes réductions de toute la Pays-Bas!",
     "subtitle": "Uniquement chez nous, vous trouverez les meilleures offres et les prix les plus bas du marché. Satisfaction garantie !",
     "button": "Voir toutes les promotions"
   },
@@ -528,7 +527,11 @@
     "out_of_stock": "Rupture de stock",
     "success_message": "Produit ajouté au panier!"
     
-  }
+  },
+  "date_names": {
+  "days": ["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"],
+  "months": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"]
+}
 }
 
 

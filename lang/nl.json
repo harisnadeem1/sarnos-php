@@ -120,13 +120,13 @@
         "about": {
             "text": "De ideale winkel met mega promoties op de markt van Sarnos. Bij ons vind je de beste deals en de laagste prijzen!"
         },
-        "contact": {
-            "title": "Contact",
-            "email": "kontakt@Sarnos.com",
-            "address_line1": "ul. Krakowska 152",
-            "address_line2": "30-435 Kraków",
-            "address_line3": "Polen"
-        },
+      "contact": {
+    "title": "Contact",
+    "email": "klantenservice@sarnos.nl",
+    "address_line1": "Herengracht 34",
+    "address_line2": "1015 BL Amsterdam",
+    "address_line3": "Nederland"
+  },
         "info": {
             "title": "Informatie",
             "terms": "Reglement",
@@ -135,15 +135,13 @@
             "returns": "Retourneren & Klachten",
             "contact": "Contact"
         },
-        "company": {
-            "title": "Bedrijfsgegevens",
-            "nip": "NIP: 675-15-67-890",
-            "regon": "REGON: 385678901",
-            "krs": "KRS: 0000789456",
-            "bank": "Bank: PKO Bank Sarnos",
-            "swift": "SWIFT: PKOPPLPW",
-            "iban": "IBAN: PL44 1020 2892 2276 3005 0000 1234"
-        },
+      "company": {
+    "title": "Bedrijfsgegevens",
+    "legal_name": "Wettelijke bedrijfsnaam: Sarnos",
+    "kvk": "KvK: 73829145",
+    "vat": "BTW nr.: NL301945782B03"
+}
+,
         "bottom": {
             "text": "© 2025 Sarnos. Alle rechten voorbehouden."
         }
@@ -424,9 +422,13 @@
 },
 
 "collection": {
-    "notice_title": "LIQUIDATIEVERKOOP",
-    "notice_line1": "Deze winkel staat momenteel onder curatele en zal binnenkort sluiten. Alle resterende fabrieksartikelen worden nu verkocht tijdens deze liquidatieverkoop. Nieuwe voorraad is uitgesloten — op = op.",
-    "notice_line2": "Alle aankopen zijn beschermd door de Sarnos-wetgeving — wettelijke garantie en retourtermijn blijven altijd van kracht."
+    "notice_title": "UITVERKOOP",
+    "notice_line1": "Onze winkel sluit binnenkort. Daarom gaan alle resterende merkartikelen nu weg voor scherpe prijzen. Er komt geen nieuwe voorraad meer — op = op!",
+    "notice_line2": "Wettelijke garantie en retourtermijn blijven altijd geldig.",
+    "view_button": "Bekijk",
+    "delivery_info": "Levertijd: 1-3 werkdagen"
+
+
   }
 
 ,
@@ -474,7 +476,7 @@
     "warranty_text": "Wij bieden maar liefst 4 jaar garantie op alle producten. Dit bewijst onze hoge kwaliteit en ons vertrouwen in de duurzaamheid van onze producten."
   },
   "promo_banner": {
-    "title": "De grootste kortingen in heel Polen!",
+    "title": "De grootste kortingen in heel Nederland!",
     "subtitle": "Alleen bij ons vind je de beste deals en de laagste prijzen op de markt. Tevredenheid gegarandeerd!",
     "button": "Bekijk alle aanbiedingen"
   },
@@ -486,6 +488,10 @@
     "out_of_stock": "Niet op voorraad",
     "success_message": "Product toegevoegd aan winkelwagen!"
 
+  },
+    "date_names": {
+    "days": ["zondag", "maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag"],
+    "months": ["januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december"]
   }
 }
 

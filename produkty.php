@@ -1116,14 +1116,14 @@ body {
                         
                         <div class="product-actions">
                             <button class="btn-add-cart" onclick="event.preventDefault(); event.stopPropagation(); window.location.href='<?php echo Database::getProductUrl($product); ?>';">
-                                <i class="fas fa-eye"></i> Zobacz
+                                <i class="fas fa-eye"></i> <?php echo $texts['collection']['view_button']; ?>
                             </button>
                             <button class="btn-wishlist" onclick="event.preventDefault(); event.stopPropagation(); toggleWishlist(<?php echo $product['id']; ?>)">
                                 <i class="far fa-heart"></i>
                             </button>
                         </div>
                         <div class="delivery-info">
-                            <i class="fas fa-truck"></i> Czas dostawy: 1-3 dni roboczych
+                            <i class="fas fa-truck"></i> <?php echo $texts['collection']['delivery_info']; ?>
                         </div>
                     </div>
                 </div>
