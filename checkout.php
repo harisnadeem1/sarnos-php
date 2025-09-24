@@ -48,6 +48,35 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         'phone' => $_POST['phone'] ?? ''
     ];
     
+    // Store customer email for later use
+    $_SESSION['customer_email'] = $_POST['email'] ?? '';
+    
+    // ----- LOG SALE TO sales.json WHEN ORDER IS PLACED -----
+    $salesFile = __DIR__ . '/sales.json';
+    $sales = file_exists($salesFile) ? json_decode(file_get_contents($salesFile), true) : [];
+    
+    // Add current cart items to sales
+    foreach ($cartItems as $item) {
+        $productName = $item['name'] 
+            ?? ($item['current_name'] ?? 'Unknown Product');
+
+        $sales[] = [
+            'product_id' => $item['product_id'] ?? 0,
+            'name' => $productName,
+            'price' => $item['price'] ?? 0,
+            'quantity' => $item['quantity'] ?? 0,
+            'total' => ($item['price'] ?? 0) * ($item['quantity'] ?? 0),
+            'customer_email' => $_POST['email'] ?? '',
+            'customer_name' => ($_POST['first_name'] ?? '') . ' ' . ($_POST['last_name'] ?? ''),
+            'status' => 'pending', // Mark as pending until payment confirmation
+            'date' => date('Y-m-d H:i:s'),
+            'order_id' => uniqid('order_', true) // Generate unique order ID
+        ];
+    }
+    
+    // Save updated sales data
+    file_put_contents($salesFile, json_encode($sales, JSON_PRETTY_PRINT));
+    
     // Optional: Save order to database with pending status
     // You can add order creation logic here
     
@@ -665,7 +694,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Handle form submission
         document.getElementById('checkoutForm').addEventListener('submit', function(e) {
             // Form will be submitted normally to redirect to Bunq
-            // You can add additional validation here if needed
+            // Sales data will be logged on the server side before redirect
         });
     </script>
 </body>
