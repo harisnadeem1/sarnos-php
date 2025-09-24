@@ -410,8 +410,8 @@
   },
 
   "payment": {
-    "title": "Bunq Betaling",
-    "method": "U wordt doorgestuurd naar Bunq om uw betaling veilig af te ronden.",
+    "title": "Ideal Betaling",
+    "method": "U wordt doorgestuurd naar Ideal om uw betaling veilig af te ronden.",
     "button": "NU BETALEN"
   },
    "benefits": {

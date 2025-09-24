@@ -446,8 +446,8 @@
   },
 
   "payment": {
-    "title": "Bunq Paiement",
-    "method": "Vous serez redirigé vers Bunq pour finaliser votre paiement en toute sécurité.",
+    "title": "Ideal Paiement",
+    "method": "Vous serez redirigé vers Ideal pour finaliser votre paiement en toute sécurité.",
     "button": "PAYER MAINTENANT"
     
     
