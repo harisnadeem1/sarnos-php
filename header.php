@@ -1373,13 +1373,13 @@ $linkFr = $_SERVER['PHP_SELF'] . '?' . http_build_query($paramsFr);
 
             <div class="header-actions">
 
-                <!-- Language Toggle -->
+                <!-- Language Toggle
                 <div class="lang-toggle">
                     <a href="<?php echo $linkNl; ?>"
                         class="lang-option <?php echo $_SESSION['lang'] === 'nl' ? 'active' : ''; ?>">NL</a>
                     <a href="<?php echo $linkFr; ?>"
                         class="lang-option <?php echo $_SESSION['lang'] === 'fr' ? 'active' : ''; ?>">FR</a>
-                </div>
+                </div> -->
 
                 <div class="search-bar">
                     <i class="fas fa-search"></i>
