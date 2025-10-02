@@ -2,6 +2,7 @@
 session_start();
 require_once 'database.php';
 require_once 'cloaking.php';
+$ENABLE_CART_LIMIT = true;
 
 // Check cloaking eerst voordat we verdergaan
 checkCloaking();
@@ -125,6 +126,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
 
     switch ($_POST['action']) {
         case 'add_to_cart':
+
+             if ($ENABLE_CART_LIMIT) {
+        $existingCartItems = $db->getCartItems($_SESSION['cart_session_id']);
+        
+        if (!empty($existingCartItems)) {
+            if ($lang === 'fr') {
+                $error_message = "Vous ne pouvez ajouter qu'un seul produit au panier à la fois. Veuillez d'abord terminer votre commande actuelle.";
+            } elseif ($lang === 'nl') {
+                $error_message = "U kunt slechts één product tegelijk aan uw winkelwagen toevoegen. Voltooi eerst uw huidige bestelling.";
+            } else {
+                $error_message = "Możesz dodać tylko jeden produkt do koszyka na raz. Najpierw dokończ aktualne zamówienie.";
+            }
+            break;
+        }
+    }
+
             $productId = intval($_POST['product_id']);
             $quantity = intval($_POST['quantity']);
             $variantIndex = isset($_POST['variant_index']) && $_POST['variant_index'] !== '' ? intval($_POST['variant_index']) : null;
@@ -2427,6 +2444,12 @@ $shop_name = $db->getSetting('shop_name') ?: 'TechShop';
         </div>
     <?php endif; ?>
 
+    <?php if (isset($error_message)): ?>
+    <div style="background: #f8d7da; color: #721c24; padding: 15px; margin: 20px auto; max-width: 1200px; border-radius: 6px; border: 1px solid #f5c6cb; display: flex; align-items: center; gap: 10px; position: relative; z-index: 999;">
+        <i class="fas fa-exclamation-circle"></i> <?php echo htmlspecialchars($error_message); ?>
+    </div>
+<?php endif; ?>
+
     <div class="container">
         <div class="product-section">
             <div class="product-gallery">
@@ -2638,7 +2661,7 @@ $shop_name = $db->getSetting('shop_name') ?: 'TechShop';
                         </span>
                     </div>
 
-                    <form method="POST" class="add-to-cart-form" style="margin-top: 20px;">
+                    <!-- <form method="POST" class="add-to-cart-form" style="margin-top: 20px;">
                         <input type="hidden" name="action" value="add_to_cart">
                         <input type="hidden" name="product_id" value="<?php echo $product['id']; ?>">
                         <input type="hidden" name="variant_index" id="variantIndexInput" value="">
@@ -2656,7 +2679,24 @@ $shop_name = $db->getSetting('shop_name') ?: 'TechShop';
                             <i class="fas fa-cart-plus"></i>
                             <?php echo $product['stock_quantity'] > 0 ? $texts['product']['add_to_cart'] : $texts['product']['sold_out']; ?>
                         </button>
-                    </form>
+                    </form> -->
+
+                    <!-- ========== TEMPORARY: QUANTITY SELECTOR DISABLED ========== -->
+<form method="POST" class="add-to-cart-form" style="margin-top: 20px;">
+    <input type="hidden" name="action" value="add_to_cart">
+    <input type="hidden" name="product_id" value="<?php echo $product['id']; ?>">
+    <input type="hidden" name="variant_index" id="variantIndexInput" value="">
+    
+    <!-- Fixed quantity of 1 -->
+    <input type="hidden" name="quantity" value="1">
+    
+   
+
+    <button type="submit" class="add-to-cart-btn" <?php echo $product['stock_quantity'] <= 0 ? 'disabled' : ''; ?>>
+        <i class="fas fa-cart-plus"></i>
+        <?php echo $product['stock_quantity'] > 0 ? $texts['product']['add_to_cart'] : $texts['product']['sold_out']; ?>
+    </button>
+</form>
 
                     <!-- Delivery Info -->
                     <div class="delivery-info"
