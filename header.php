@@ -1492,13 +1492,13 @@ $linkFr = $_SERVER['PHP_SELF'] . '?' . http_build_query($paramsFr);
                 <?php endif; ?>
             </div>
 
-            <!-- <div class="cart-item-controls">
-                <form method="POST" style="display: inline;">
+            <div class="cart-item-controls">
+                <!-- <form method="POST" style="display: inline;">
                     <input type="hidden" name="action" value="update_cart">
                     <input type="hidden" name="product_id" value="<?php echo $item['product_id']; ?>">
                     <input type="number" name="quantity" value="<?php echo $item['quantity']; ?>" min="1" max="99"
                            style="width: 50px; padding: 4px; text-align: center;" onchange="this.form.submit()">
-                </form>
+                </form> -->
 
                 <form method="POST" style="display: inline;">
                     <input type="hidden" name="action" value="remove_from_cart">
@@ -1507,7 +1507,7 @@ $linkFr = $_SERVER['PHP_SELF'] . '?' . http_build_query($paramsFr);
                         <i class="fas fa-trash"></i>
                     </button>
                 </form>
-            </div> -->
+            </div>
         </div>
     </div>
 <?php endforeach; ?>
